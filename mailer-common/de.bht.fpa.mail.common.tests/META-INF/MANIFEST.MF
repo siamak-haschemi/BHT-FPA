@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Tests
+Bundle-SymbolicName: de.bht.fpa.mail.common.tests
+Bundle-Version: 1.0.0.qualifier
+Fragment-Host: de.bht.fpa.mail.common;bundle-version="1.0.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: org.jmock;bundle-version="1.2.0"
+Bundle-ClassPath: libs/jmock-2.5.1.jar,
+ libs/jmock-junit4-2.5.1.jar,
+ .

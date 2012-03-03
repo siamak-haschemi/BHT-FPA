@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Hello
+Bundle-SymbolicName: de.bht.fpa.modules.hello
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: de.bht.fpa.modules.hello.impl.Activator
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Export-Package: de.bht.fpa.modules.hello
+Import-Package: org.osgi.framework

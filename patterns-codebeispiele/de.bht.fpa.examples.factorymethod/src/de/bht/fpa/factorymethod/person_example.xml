@@ -1,0 +1,13 @@
+<persons>
+	<person gender="f" name="Abby">
+		<person gender="f" name="Sabine">
+			<person gender="f" name="Maria">
+				<person gender="m" name="Rudolf" />
+				<person gender="m" name="Friedrich" />
+			</person>
+			<person gender="m" name="Jens" />
+		</person>
+		<person gender="m" name="Tom" />
+		<person gender="m" name="Klaus" />
+	</person>
+</persons>

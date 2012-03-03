@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Coffe Machine Monitor
+Bundle-SymbolicName: de.bht.fpa.examples.proxypattern.coffemachine.monitor
+Bundle-Version: 1.0.0.qualifier
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Import-Package: de.bht.fpa.proxypattern.coffemachine,
+ org.osgi.framework;version="1.6.0",
+ org.osgi.util.tracker;version="1.5.0"
+Bundle-Activator: de.bht.fpa.proxypattern.monitor.Activator

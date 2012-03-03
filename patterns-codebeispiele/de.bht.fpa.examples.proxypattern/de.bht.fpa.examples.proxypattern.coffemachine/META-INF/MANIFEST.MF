@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Coffe Machine
+Bundle-SymbolicName: de.bht.fpa.examples.proxypattern.coffemachine
+Bundle-Version: 1.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Import-Package: de.bht.fpa.proxypattern.coffemachine,
+ org.osgi.framework
+Bundle-Activator: de.bht.fpa.proxypattern.coffemachine.impl.Activator

@@ -1,0 +1,7 @@
+<horses>
+	<horse gender="f" name="Acromantula">
+		<horse gender="m" name="Abu" />
+		<horse gender="m" name="Lightning" />
+	</horse>
+	<horse gender="f" name="Samara" />
+</horses>
