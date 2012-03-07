@@ -1,5 +1,10 @@
 package de.bht.fpa.mail.common.testdata;
 
+import static com.google.common.collect.Lists.newArrayList;
+import static de.bht.fpa.mail.s000000.common.model.builder.Builders.newMessageBuilder;
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.equalTo;
+
 import java.util.Collection;
 
 import org.jmock.Expectations;
@@ -9,12 +14,9 @@ import org.jmock.integration.junit4.JUnit4Mockery;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import de.bht.fpa.mail.common.model.Message;
-
-import static com.google.common.collect.Lists.newArrayList;
-import static de.bht.fpa.mail.common.model.builder.Builders.*;
-import static org.hamcrest.MatcherAssert.*;
-import static org.hamcrest.Matchers.*;
+import de.bht.fpa.mail.s000000.common.model.Message;
+import de.bht.fpa.mail.s000000.common.testdata.ITestDataProvider;
+import de.bht.fpa.mail.s000000.common.testdata.MessageTestDataProvider;
 
 @RunWith(JMock.class)
 public class MessageTestDataProviderTest {

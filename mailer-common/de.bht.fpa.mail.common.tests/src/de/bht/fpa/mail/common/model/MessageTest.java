@@ -1,9 +1,12 @@
 package de.bht.fpa.mail.common.model;
 
 import static com.google.common.collect.Lists.newArrayList;
-import static de.bht.fpa.mail.common.model.builder.Builders.newMessageBuilder;
-import static org.hamcrest.Matchers.*;
-import static org.junit.Assert.*;
+import static de.bht.fpa.mail.s000000.common.model.builder.Builders.newMessageBuilder;
+import static org.hamcrest.Matchers.greaterThan;
+import static org.hamcrest.Matchers.is;
+import static org.hamcrest.Matchers.notNullValue;
+import static org.junit.Assert.assertThat;
+import static org.junit.Assert.assertTrue;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -23,6 +26,8 @@ import javax.xml.bind.JAXB;
 
 import org.junit.After;
 import org.junit.Test;
+
+import de.bht.fpa.mail.s000000.common.model.Message;
 
 public class MessageTest {
 

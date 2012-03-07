@@ -17,6 +17,20 @@
 <unit id="com.google.collect.source" version="1.0.0.v201105210816"/>
 <unit id="org.slf4j.api" version="1.6.1.v20100831-0715"/>
 <unit id="org.slf4j.api.source" version="1.6.1.v20100831-0715"/>
+<unit id="com.google.inject" version="2.0.0.v201105231817"/>
+<unit id="com.google.inject.source" version="2.0.0.v201105231817"/>
+<unit id="org.hamcrest.core" version="1.1.0.v20090501071000"/>
+<unit id="org.hamcrest.core.source" version="1.1.0.v20090501071000"/>
+<unit id="org.hamcrest.integration.source" version="1.1.0.v20090501071000"/>
+<unit id="org.hamcrest.generator" version="1.1.0.v20090501071000"/>
+<unit id="org.hamcrest.generator.source" version="1.1.0.v20090501071000"/>
+<unit id="org.hamcrest.integration" version="1.1.0.v20090501071000"/>
+<unit id="org.hamcrest.library" version="1.1.0.v20090501071000"/>
+<unit id="org.hamcrest.library.source" version="1.1.0.v20090501071000"/>
+<unit id="org.hamcrest" version="1.1.0.v20090501071000"/>
+<unit id="org.hamcrest.text" version="1.1.0.v20090501071000"/>
+<unit id="org.hamcrest.text.source" version="1.1.0.v20090501071000"/>
+<unit id="org.jmock" version="1.2.0.v201112120441"/>
 <repository location="http://download.eclipse.org/tools/orbit/downloads/drops/S20120123151124/repository/"/>
 </location>
 </locations>
