@@ -23,7 +23,7 @@ public final class OSGiServiceHelper {
    *         <code>null</code>
    */
   @SuppressWarnings({ "rawtypes", "unchecked" })
-  public static final <T> T getService(BundleContext bundleContext, Class<T> clazz) {
+  public static <T> T getService(BundleContext bundleContext, Class<T> clazz) {
     ServiceReference serviceReference = bundleContext.getServiceReference(clazz.getName());
     if (serviceReference == null) {
       return null;
@@ -45,7 +45,7 @@ public final class OSGiServiceHelper {
    * @return Collection of service instances of the given {@link Class} type, or
    *         an empty Collection.
    */
-  public static final <T> Collection<T> getServices(BundleContext bundleContext, Class<T> clazz) {
+  public static <T> Collection<T> getServices(BundleContext bundleContext, Class<T> clazz) {
     return getServices(bundleContext, clazz, null);
   }
 
@@ -62,7 +62,7 @@ public final class OSGiServiceHelper {
    *         an empty Collection.
    */
   @SuppressWarnings({ "unchecked" })
-  public static final <T> Collection<T> getServices(BundleContext bundleContext, Class<T> clazz, String filter) {
+  public static <T> Collection<T> getServices(BundleContext bundleContext, Class<T> clazz, String filter) {
     Collection<ServiceReference<T>> serviceReferences;
     try {
       serviceReferences = bundleContext.getServiceReferences(clazz, null);

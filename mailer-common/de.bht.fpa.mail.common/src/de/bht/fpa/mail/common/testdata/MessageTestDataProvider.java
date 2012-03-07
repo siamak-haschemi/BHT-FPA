@@ -1,7 +1,6 @@
 package de.bht.fpa.mail.common.testdata;
 
 import java.util.Collection;
-import java.util.List;
 
 import de.bht.fpa.mail.common.model.Message;
 

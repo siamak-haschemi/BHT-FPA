@@ -1,6 +1,11 @@
 package de.bht.fpa.mail.common.model.builder;
 
 public final class Builders {
+
+  private Builders() {
+
+  }
+
   public static MessageBuilder newMessageBuilder() {
     return MessageBuilder.newMessageBuilder();
   }

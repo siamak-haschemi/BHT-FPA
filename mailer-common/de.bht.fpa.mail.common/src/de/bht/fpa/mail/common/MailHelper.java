@@ -41,6 +41,9 @@ import de.bht.fpa.mail.common.model.RecipientType;
 import de.bht.fpa.mail.common.model.builder.MessageBuilder;
 
 public final class MailHelper {
+  private static final int X_PRIORITY_HIGH_END = 4;
+  private static final int X_PRIORITY_HIGH_START = 2;
+
   private MailHelper() {
   }
 
@@ -398,13 +401,13 @@ public final class MailHelper {
       }
 
       Integer flag = Integer.valueOf(matcher.group(1));
-      if (flag < 2) {
+      if (flag < X_PRIORITY_HIGH_START) {
         return Importance.HIGH;
       }
-      if (2 <= flag && flag <= 4) {
+      if (X_PRIORITY_HIGH_START <= flag && flag <= X_PRIORITY_HIGH_END) {
         return Importance.NORMAL;
       }
-      if (flag > 4) {
+      if (flag > X_PRIORITY_HIGH_END) {
         return Importance.LOW;
       }
     }
