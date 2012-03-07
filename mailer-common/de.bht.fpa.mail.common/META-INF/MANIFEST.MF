@@ -7,11 +7,11 @@ Bundle-ClassPath: .,
  libs/derby.jar,
  libs/eclipselink.jar,
  libs/javax.persistence_2.0.3.v201010191057.jar
-Bundle-Activator: de.bht.fpa.mail.common.internal.Activator
-Export-Package: de.bht.fpa.mail.common,
- de.bht.fpa.mail.common.model,
- de.bht.fpa.mail.common.model.builder,
- de.bht.fpa.mail.common.testdata,
+Bundle-Activator: de.bht.fpa.mail.s000000.common.internal.Activator
+Export-Package: de.bht.fpa.mail.s000000.common,
+ de.bht.fpa.mail.s000000.common.model,
+ de.bht.fpa.mail.s000000.common.model.builder,
+ de.bht.fpa.mail.s000000.common.testdata,
  javax.persistence;version="2.0.3.fpa",
  javax.persistence.criteria;version="2.0.3.fpa",
  javax.persistence.metamodel;version="2.0.3.fpa",
