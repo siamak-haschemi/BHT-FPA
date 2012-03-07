@@ -174,4 +174,18 @@ public class Message extends BaseEntity {
     return s.toString();
   }
 
+  public String toShortString() {
+    StringBuilder s = new StringBuilder();
+    s.append("[Message: ");
+    s.append("sender=").append(sender).append(" ");
+    s.append("received=").append(received).append(" ");
+    s.append("subject=").append(subject).append(" ");
+    s.append("read=").append(read).append(" ");
+    s.append("importance=").append(importance).append(" ");
+
+    s.append("#attachments=" + attachment.size());
+    s.append("#recipients=" + recipient.size());
+    s.append("]").append(" ");
+    return s.toString();
+  }
 }

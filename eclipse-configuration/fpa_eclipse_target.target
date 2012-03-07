@@ -15,6 +15,8 @@
 <unit id="javax.mail.glassfish.source" version="1.4.1.v201108011116"/>
 <unit id="com.google.collect" version="1.0.0.v201105210816"/>
 <unit id="com.google.collect.source" version="1.0.0.v201105210816"/>
+<unit id="org.slf4j.api" version="1.6.1.v20100831-0715"/>
+<unit id="org.slf4j.api.source" version="1.6.1.v20100831-0715"/>
 <repository location="http://download.eclipse.org/tools/orbit/downloads/drops/S20120123151124/repository/"/>
 </location>
 </locations>
