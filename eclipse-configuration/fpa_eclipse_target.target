@@ -5,6 +5,7 @@
 <locations>
 <location includeAllPlatforms="false" includeMode="planner" includeSource="true" type="InstallableUnit">
 <unit id="org.eclipse.rcp.sdk.id" version="3.7.2.M20120208-0800"/>
+<unit id="org.eclipse.ui.forms" version="3.5.101.v20111011-1919"/>
 <unit id="org.junit" version="4.8.2.v4_8_2_v20110321-1705"/>
 <repository location="http://download.eclipse.org/releases/indigo/"/>
 </location>
