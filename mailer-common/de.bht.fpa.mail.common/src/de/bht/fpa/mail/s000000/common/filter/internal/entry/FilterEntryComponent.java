@@ -16,6 +16,7 @@ public final class FilterEntryComponent extends Composite {
   private static final int NR_OF_COLUMNS = 3;
   private IFilterEntryChangedListener filterChangedListener = IFilterEntryChangedListener.NULL;
   private final FilterTypeComponent filterTypeComponent;
+  private final Button remBtn;
 
   /**
    * Create the composite.
@@ -32,7 +33,7 @@ public final class FilterEntryComponent extends Composite {
     filterTypeComponent = new FilterTypeComponent(this);
     filterTypeComponent.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
 
-    Button remBtn = new Button(this, SWT.NONE);
+    remBtn = new Button(this, SWT.NONE);
     remBtn.setText("-");
     remBtn.addSelectionListener(new SelectionAdapter() {
       @Override
@@ -54,6 +55,10 @@ public final class FilterEntryComponent extends Composite {
 
   public void setFilterChangedListener(IFilterEntryChangedListener filterChangedListener) {
     this.filterChangedListener = filterChangedListener;
+  }
+
+  public void setRemoveButtonEnabled(boolean removeButtonEnabled) {
+    remBtn.setEnabled(removeButtonEnabled);
   }
 
   @Override

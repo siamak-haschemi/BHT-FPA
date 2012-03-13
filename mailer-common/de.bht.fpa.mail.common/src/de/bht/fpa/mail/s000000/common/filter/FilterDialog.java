@@ -69,8 +69,7 @@ public final class FilterDialog extends Dialog {
 
     @Override
     public void onRemoveFilter(FilterEntryComponent filterEntryComponent) {
-      filterEntryComponents.remove(filterEntryComponent);
-      filterEntryComponent.dispose();
+      removeFilterEntry(filterEntryComponent);
       container.layout();
     }
   };
@@ -146,6 +145,23 @@ public final class FilterDialog extends Dialog {
     filterEntryComponent.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
     filterEntryComponent.setFilterChangedListener(filterEntryChangedListener);
     filterEntryComponents.add(index, filterEntryComponent);
+    updateRemoveButtonEnabled();
+  }
+
+  private void removeFilterEntry(FilterEntryComponent filterEntryComponent) {
+    filterEntryComponents.remove(filterEntryComponent);
+    filterEntryComponent.dispose();
+    updateRemoveButtonEnabled();
+  }
+
+  private void updateRemoveButtonEnabled() {
+    if (filterEntryComponents.size() == 1) {
+      filterEntryComponents.get(0).setRemoveButtonEnabled(false);
+    } else {
+      for (FilterEntryComponent filterEntryComponent : filterEntryComponents) {
+        filterEntryComponent.setRemoveButtonEnabled(true);
+      }
+    }
   }
 
   /**
