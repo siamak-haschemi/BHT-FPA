@@ -183,8 +183,13 @@ public class Message extends BaseEntity {
     s.append("read=").append(read).append(" ");
     s.append("importance=").append(importance).append(" ");
 
+    s.append("recipient=(");
+    for (Recipient r : recipient) {
+      s.append(r).append(",");
+    }
+    s.append(")");
+
     s.append("#attachments=" + attachment.size());
-    s.append("#recipients=" + recipient.size());
     s.append("]").append(" ");
     return s.toString();
   }
