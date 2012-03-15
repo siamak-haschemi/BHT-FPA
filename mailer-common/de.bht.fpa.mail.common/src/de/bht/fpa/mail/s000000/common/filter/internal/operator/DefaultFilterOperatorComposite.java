@@ -5,6 +5,7 @@ import org.eclipse.jface.viewers.ComboViewer;
 import org.eclipse.jface.viewers.ISelectionChangedListener;
 import org.eclipse.jface.viewers.LabelProvider;
 import org.eclipse.jface.viewers.SelectionChangedEvent;
+import org.eclipse.jface.viewers.StructuredSelection;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.layout.GridData;
 import org.eclipse.swt.layout.GridLayout;
@@ -59,8 +60,7 @@ public final class DefaultFilterOperatorComposite extends FilterOperatorComposit
     comboViewer.setInput(FilterOperator.values());
 
     // default
-    comboViewer.getCombo().select(0);
-    operator = FilterOperator.CONTAINS;
+    comboViewer.setSelection(new StructuredSelection(FilterOperator.CONTAINS));
 
     text = new Text(this, SWT.BORDER);
     text.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, true, 1, 1));

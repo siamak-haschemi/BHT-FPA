@@ -2,11 +2,12 @@ package de.bht.fpa.mail.s000000.common.filter.internal.type;
 
 import org.eclipse.jface.viewers.ArrayContentProvider;
 import org.eclipse.jface.viewers.ComboViewer;
+import org.eclipse.jface.viewers.ISelectionChangedListener;
 import org.eclipse.jface.viewers.LabelProvider;
+import org.eclipse.jface.viewers.SelectionChangedEvent;
+import org.eclipse.jface.viewers.StructuredSelection;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.custom.StackLayout;
-import org.eclipse.swt.events.SelectionAdapter;
-import org.eclipse.swt.events.SelectionEvent;
 import org.eclipse.swt.layout.GridData;
 import org.eclipse.swt.layout.GridLayout;
 import org.eclipse.swt.widgets.Combo;
@@ -53,19 +54,17 @@ public final class FilterTypeComponent extends Composite {
       }
     });
 
-    combo.addSelectionListener(new SelectionAdapter() {
-      @Override
-      public void widgetDefaultSelected(SelectionEvent e) {
-        widgetSelected(e);
-      }
+    filterTypeComboViewer.addSelectionChangedListener(new ISelectionChangedListener() {
 
       @Override
-      public void widgetSelected(SelectionEvent e) {
-        stackLayout.topControl.dispose();
+      public void selectionChanged(SelectionChangedEvent event) {
+        if (stackLayout.topControl != null) {
+          stackLayout.topControl.dispose();
+        }
         FilterType selectedFilterType = getSelectedFilterType();
         switch (selectedFilterType) {
         case SENDER:
-        case RECEIVER:
+        case RECIPIENTS:
         case SUBJECT:
         case TEXT:
           filterOperatorComposite = new DefaultFilterOperatorComposite(filterPanel);
@@ -91,10 +90,7 @@ public final class FilterTypeComponent extends Composite {
     stackLayout = new StackLayout();
     filterPanel.setLayout(stackLayout);
 
-    // default
-    filterTypeComboViewer.getCombo().select(0);
-    filterOperatorComposite = new DefaultFilterOperatorComposite(filterPanel);
-    stackLayout.topControl = filterOperatorComposite;
+    filterTypeComboViewer.setSelection(new StructuredSelection(FilterType.SENDER));
   }
 
   @Override

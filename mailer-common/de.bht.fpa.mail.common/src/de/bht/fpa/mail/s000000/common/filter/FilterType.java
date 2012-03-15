@@ -6,7 +6,7 @@ package de.bht.fpa.mail.s000000.common.filter;
  * @author siamakhaschemi
  */
 public enum FilterType {
-  SENDER("Sender"), RECEIVER("Receiver"), SUBJECT("Subject"), TEXT("Contents of EMail"), READ("Read"), IMPORTANCE(
+  SENDER("Sender"), RECIPIENTS("Recipients"), SUBJECT("Subject"), TEXT("Contents of EMail"), READ("Read"), IMPORTANCE(
       "Importance");
 
   private String value;

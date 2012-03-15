@@ -10,19 +10,20 @@ import org.eclipse.jface.viewers.ComboViewer;
 import org.eclipse.jface.viewers.ISelectionChangedListener;
 import org.eclipse.jface.viewers.LabelProvider;
 import org.eclipse.jface.viewers.SelectionChangedEvent;
+import org.eclipse.jface.viewers.StructuredSelection;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.graphics.Point;
 import org.eclipse.swt.layout.GridData;
 import org.eclipse.swt.layout.GridLayout;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Control;
+import org.eclipse.swt.widgets.Group;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Shell;
 
 import de.bht.fpa.mail.s000000.common.SelectionHelper;
 import de.bht.fpa.mail.s000000.common.filter.internal.entry.FilterEntryComponent;
 import de.bht.fpa.mail.s000000.common.filter.internal.entry.IFilterEntryChangedListener;
-import org.eclipse.swt.widgets.Group;
 
 /**
  * This {@link Dialog} allows to create a filter combination. The user can
@@ -75,6 +76,7 @@ public final class FilterDialog extends Dialog {
   };
   private Group filterEntriesGroup;
   private Composite container;
+  private ComboViewer groupFilterComboViewer;
 
   /**
    * Create the dialog.
@@ -118,23 +120,22 @@ public final class FilterDialog extends Dialog {
     Label lblBeiErfllen = new Label(unionIntersectionComponent, SWT.NONE);
     lblBeiErfllen.setText("If");
 
-    ComboViewer comboViewer = new ComboViewer(unionIntersectionComponent, SWT.READ_ONLY);
-    comboViewer.setContentProvider(ArrayContentProvider.getInstance());
-    comboViewer.setLabelProvider(new LabelProvider() {
+    groupFilterComboViewer = new ComboViewer(unionIntersectionComponent, SWT.READ_ONLY);
+    groupFilterComboViewer.setContentProvider(ArrayContentProvider.getInstance());
+    groupFilterComboViewer.setLabelProvider(new LabelProvider() {
       @Override
       public String getText(Object element) {
         return ((FilterGroupType) element).value();
       }
     });
-    comboViewer.addSelectionChangedListener(new ISelectionChangedListener() {
+    groupFilterComboViewer.addSelectionChangedListener(new ISelectionChangedListener() {
       @Override
       public void selectionChanged(SelectionChangedEvent event) {
         filterGroupType = SelectionHelper.handleStructuredSelectionEvent(event, FilterGroupType.class);
       }
     });
-    comboViewer.setInput(FilterGroupType.values());
-    comboViewer.getCombo().select(0);
-    filterGroupType = FilterGroupType.UNION;
+    groupFilterComboViewer.setInput(FilterGroupType.values());
+    groupFilterComboViewer.setSelection(new StructuredSelection(FilterGroupType.UNION));
 
     Label lblDerFolgendenBedingungen = new Label(unionIntersectionComponent, SWT.NONE);
     lblDerFolgendenBedingungen.setText("of the following conditions are met:");
@@ -194,16 +195,17 @@ public final class FilterDialog extends Dialog {
 
   @Override
   protected void cancelPressed() {
-    filterCombinations = new LinkedList<FilterCombination>();
+    filterEntriesGroup = null;
+    filterCombinations = null;
     super.cancelPressed();
   }
 
   /**
    * Returns the result of this filter dialog, which is a list of filters
-   * created by the user, or an empty list if user canceled the dialog ( see
-   * {@link FilterDialog#cancelPressed()}).
+   * created by the user, or <code>null</code> if the ser canceled the dialog (
+   * see {@link FilterDialog#cancelPressed()}).
    * 
-   * @return list of {@link FilterCombination}s or an empty list if user
+   * @return list of {@link FilterCombination}s or <code>null</code> if the user
    *         canceled the dialog.
    */
   public List<FilterCombination> getFilterCombinations() {
@@ -211,7 +213,8 @@ public final class FilterDialog extends Dialog {
   }
 
   /**
-   * Returns the grouping type of the filter.
+   * Returns the grouping type of the filter, or <code>null</code> if the ser
+   * canceled the dialog ( see {@link FilterDialog#cancelPressed()})
    * 
    * @return
    */
