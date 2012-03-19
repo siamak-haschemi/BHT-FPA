@@ -1,3 +1,11 @@
+/*******************************************************************************
+ * Copyright (c) 2011 - 2012 Siamak Haschemi & Benjamin Haupt
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
+ *******************************************************************************/
+
 package de.bht.fpa.mail.s000000.common;
 
 import static de.bht.fpa.mail.s000000.common.model.builder.Builders.newAttachmentBuilder;
@@ -40,6 +48,15 @@ import de.bht.fpa.mail.s000000.common.model.Message;
 import de.bht.fpa.mail.s000000.common.model.RecipientType;
 import de.bht.fpa.mail.s000000.common.model.builder.MessageBuilder;
 
+/**
+ * This class allows to synchronize a remote IMAP-based Mail-account with a
+ * local database.
+ * 
+ * TODO show typical usage of IMAP sync.
+ * 
+ * @author Siamak Haschemi
+ * 
+ */
 public final class MailHelper {
   private static final int X_PRIORITY_HIGH_END = 4;
   private static final int X_PRIORITY_HIGH_START = 2;

@@ -3,7 +3,7 @@ package de.bht.fpa.strategypattern.gof;
 /**
  * Shows an implementation of the GoF Strategy Pattern contained in one class.
  * 
- * @author siamakhaschemi
+ * @author Siamak Haschemi
  */
 public class StrategyPatternInANutshell {
   public static void main(String[] args) {
@@ -27,7 +27,7 @@ public class StrategyPatternInANutshell {
    * The classes that implement a concrete strategy should implement this. The
    * context class uses this to call the concrete strategy
    * 
-   * @author siamakhaschemi
+   * @author Siamak Haschemi
    */
   interface IStrategy {
     void execute();
@@ -36,7 +36,7 @@ public class StrategyPatternInANutshell {
   /**
    * Implements the an algorithm using the strategy interface.
    * 
-   * @author siamakhaschemi
+   * @author Siamak Haschemi
    */
   static class ConcreteStrategyA implements IStrategy {
     @Override
@@ -48,7 +48,7 @@ public class StrategyPatternInANutshell {
   /**
    * Implements the an algorithm using the strategy interface.
    * 
-   * @author siamakhaschemi
+   * @author Siamak Haschemi
    */
   static class ConcreteStrategyB implements IStrategy {
     @Override
@@ -60,7 +60,7 @@ public class StrategyPatternInANutshell {
   /**
    * Implements the an algorithm using the strategy interface.
    * 
-   * @author siamakhaschemi
+   * @author Siamak Haschemi
    */
   static class ConcreteStrategyC implements IStrategy {
     @Override

@@ -8,7 +8,7 @@ import de.bht.fpa.homeautomation.remote.v3.command.ICommand;
  * but does not implement the {@link ICommand#execute()} and the
  * {@link ICommand#undo()}.
  * 
- * @author siamakhaschemi
+ * @author Siamak Haschemi
  */
 public class NoCommand implements ICommand {
 

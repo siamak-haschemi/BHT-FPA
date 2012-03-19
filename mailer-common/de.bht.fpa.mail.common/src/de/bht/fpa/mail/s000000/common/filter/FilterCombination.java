@@ -1,3 +1,11 @@
+/*******************************************************************************
+ * Copyright (c) 2011 - 2012 Siamak Haschemi & Benjamin Haupt
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
+ *******************************************************************************/
+
 package de.bht.fpa.mail.s000000.common.filter;
 
 import java.io.Serializable;
@@ -6,7 +14,7 @@ import java.io.Serializable;
  * This class represents one filter entry of the {@link FilterDialog} consisting
  * of a {@link FilterType}, a {@link FilterOperator} and a filter value.
  * 
- * @author siamakhaschemi
+ * @author Siamak Haschemi
  */
 public final class FilterCombination implements Serializable {
   private static final long serialVersionUID = -7278676570258198751L;
@@ -31,6 +39,8 @@ public final class FilterCombination implements Serializable {
   }
 
   /**
+   * Returns the {@link FilterType}.
+   * 
    * @return the {@link FilterType} of the filter. It is guaranteed that the
    *         return value is not <code>null</code>.
    */
@@ -39,6 +49,8 @@ public final class FilterCombination implements Serializable {
   }
 
   /**
+   * Returns the {@link FilterOperator}.
+   * 
    * @return the {@link FilterOperator} of the filter. It is guaranteed that the
    *         return value is not <code>null</code>.
    */
@@ -47,6 +59,8 @@ public final class FilterCombination implements Serializable {
   }
 
   /**
+   * Returns the filter value.
+   * 
    * @return the value of the filter. It is guaranteed that the return value is
    *         not <code>null</code>.
    */

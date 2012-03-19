@@ -51,7 +51,7 @@ import de.bht.fpa.proxypattern.coffemachine.ICoffeMachine;
  * 
  * setState is not supported
  * 
- * @author siamakhaschemi
+ * @author Siamak Haschemi
  * 
  */
 public class CoffeMachineRemoteServiceDecorator {

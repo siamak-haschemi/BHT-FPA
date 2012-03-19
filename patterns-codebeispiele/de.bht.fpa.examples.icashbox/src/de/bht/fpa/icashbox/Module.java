@@ -13,7 +13,7 @@ import de.bht.fpa.icashbox.ui.orders.ProductDescriptionCellLabelProvider;
 import de.bht.fpa.icashbox.ui.orders.ProductPriceCellLabelProvider;
 
 /**
- * @author siamakhaschemi
+ * @author Siamak Haschemi
  * 
  */
 public class Module extends AbstractModule {

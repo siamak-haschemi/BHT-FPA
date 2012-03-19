@@ -1,3 +1,11 @@
+/*******************************************************************************
+ * Copyright (c) 2011 - 2012 Siamak Haschemi & Benjamin Haupt
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
+ *******************************************************************************/
+
 package de.bht.fpa.mail.s000000.common.model.builder;
 
 import java.util.ArrayList;
@@ -11,6 +19,27 @@ import de.bht.fpa.mail.s000000.common.model.Importance;
 import de.bht.fpa.mail.s000000.common.model.Message;
 import de.bht.fpa.mail.s000000.common.model.Recipient;
 
+//@formatter:off
+/**
+* This class implements the builder design pattern and provides a fluent API.
+* You can create Accounts like this:
+* 
+* <pre>
+* Message message = MessageBuilder.newMessageBuilder()
+*   .text("my email")
+*   .sender(SenderBuilder.newSenderBuilder()
+*     .email("he@you.de)
+*     .build()
+*   )
+*   .sent(new Date())
+*   .build();
+* .build() 
+* </pre>
+* 
+* @author Siamak Haschemi
+* 
+*/
+//@formatter:on
 public final class MessageBuilder {
   private long id;
   private SenderBuilder senderBuilder;

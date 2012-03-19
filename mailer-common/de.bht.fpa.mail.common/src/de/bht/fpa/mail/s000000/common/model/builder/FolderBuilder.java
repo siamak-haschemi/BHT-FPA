@@ -1,3 +1,11 @@
+/*******************************************************************************
+ * Copyright (c) 2011 - 2012 Siamak Haschemi & Benjamin Haupt
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
+ *******************************************************************************/
+
 package de.bht.fpa.mail.s000000.common.model.builder;
 
 import java.util.ArrayList;
@@ -8,6 +16,30 @@ import java.util.List;
 import de.bht.fpa.mail.s000000.common.model.Folder;
 import de.bht.fpa.mail.s000000.common.model.Message;
 
+//@formatter:off
+/**
+* This class implements the builder design pattern and provides a fluent API.
+* You can create Accounts like this:
+* 
+* <pre>
+* Folter folder = FolderBuilder.newFolderBuilder()
+*   .id(4711L)
+*   .fullName("myfolder")
+*   .message(MessageBuilder.newMessageBuilder()
+*     .text("my email")
+*     .build()
+*   )
+*   .folder(FolderBuilder.newFolderBuilder()
+*     .fullName("mysubfolder")
+*     .build()
+*   )
+* .build();
+* </pre>
+* 
+* @author Siamak Haschemi
+* 
+*/
+//@formatter:on
 public final class FolderBuilder {
   private Long id;
   private String fullName;

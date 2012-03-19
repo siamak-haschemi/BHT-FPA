@@ -1,3 +1,11 @@
+/*******************************************************************************
+ * Copyright (c) 2011 - 2012 Siamak Haschemi & Benjamin Haupt
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
+ *******************************************************************************/
+
 package de.bht.fpa.mail.s000000.common.internal;
 
 import org.eclipse.jface.resource.ImageDescriptor;
@@ -5,7 +13,7 @@ import org.eclipse.ui.plugin.AbstractUIPlugin;
 import org.osgi.framework.BundleContext;
 
 /**
- * The activator class controls the plug-in life cycle
+ * The activator class controls the plug-in life cycle.
  */
 public class Activator extends AbstractUIPlugin {
 
@@ -16,7 +24,7 @@ public class Activator extends AbstractUIPlugin {
   private static Activator instance;
 
   /**
-   * The constructor
+   * The constructor.
    */
   public Activator() {
   }
@@ -48,7 +56,7 @@ public class Activator extends AbstractUIPlugin {
   }
 
   /**
-   * Returns the shared instance
+   * Returns the shared instance.
    * 
    * @return the shared instance
    */
@@ -58,7 +66,7 @@ public class Activator extends AbstractUIPlugin {
 
   /**
    * Returns an image descriptor for the image file at the given plug-in
-   * relative path
+   * relative path.
    * 
    * @param path
    *          the path

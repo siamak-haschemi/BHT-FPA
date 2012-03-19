@@ -1,3 +1,11 @@
+/*******************************************************************************
+ * Copyright (c) 2011 - 2012 Siamak Haschemi & Benjamin Haupt
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
+ *******************************************************************************/
+
 package de.bht.fpa.mail.s000000.common.filter;
 
 import java.util.LinkedList;
@@ -47,7 +55,7 @@ import de.bht.fpa.mail.s000000.common.filter.internal.entry.IFilterEntryChangedL
  * ...
  * </pre>
  * 
- * @author siamakhaschemi
+ * @author Siamak Haschemi
  * 
  */
 public final class FilterDialog extends Dialog {
@@ -213,8 +221,8 @@ public final class FilterDialog extends Dialog {
   }
 
   /**
-   * Returns the grouping type of the filter, or <code>null</code> if the ser
-   * canceled the dialog ( see {@link FilterDialog#cancelPressed()})
+   * Returns the grouping type of the filter, or <code>null</code> if the user
+   * canceled the dialog ( see {@link FilterDialog#cancelPressed()}).
    * 
    * @return
    */
