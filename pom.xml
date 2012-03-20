@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>de.bht.fpa</groupId>
   <artifactId>root</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.0.2-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <licenses>
@@ -56,6 +56,13 @@
 			<timezone>+1</timezone>
 		</developer>		
 	</developers>
+	
+<distributionManagement>
+  <snapshotRepository>
+    <id>de.bht.fpa</id>
+    <url>http://qyotta.de/nexus/content/repositories/de.bht.fpa</url>
+  </snapshotRepository>
+</distributionManagement>
 
   <properties>
     <tycho-version>0.14.1</tycho-version>
@@ -94,7 +101,7 @@
 						<artifact>
 							<groupId>de.bht.fpa</groupId>
 							<artifactId>eclipse-configuration</artifactId>
-							<version>0.0.1-SNAPSHOT</version>
+							<version>0.0.2-SNAPSHOT</version>
 							<classifier>fpa_eclipse_target</classifier>
 						</artifact>
 					</target>

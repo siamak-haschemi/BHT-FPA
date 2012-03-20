@@ -6,11 +6,11 @@
 	<parent>
 		<groupId>de.bht.fpa</groupId>
 		<artifactId>root</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
+		<version>0.0.2-SNAPSHOT</version>
 		<relativePath>../pom.xml</relativePath>
 	</parent>
 	<groupId>de.bht.fpa</groupId>
 	<artifactId>p2-repository</artifactId>
-	<version>0.0.1.qualifier</version>
+	<version>0.0.2-SNAPSHOT</version>
 	<packaging>eclipse-repository</packaging>
 </project>
