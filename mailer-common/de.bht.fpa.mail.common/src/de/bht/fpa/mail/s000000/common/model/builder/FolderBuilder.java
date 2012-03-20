@@ -19,7 +19,7 @@ import de.bht.fpa.mail.s000000.common.model.Message;
 //@formatter:off
 /**
 * This class implements the builder design pattern and provides a fluent API.
-* You can create Accounts like this:
+* You can create Folders like this:
 * 
 * <pre>
 * Folter folder = FolderBuilder.newFolderBuilder()
@@ -27,11 +27,9 @@ import de.bht.fpa.mail.s000000.common.model.Message;
 *   .fullName("myfolder")
 *   .message(MessageBuilder.newMessageBuilder()
 *     .text("my email")
-*     .build()
 *   )
 *   .folder(FolderBuilder.newFolderBuilder()
 *     .fullName("mysubfolder")
-*     .build()
 *   )
 * .build();
 * </pre>

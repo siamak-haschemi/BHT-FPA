@@ -19,6 +19,11 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.xml.bind.annotation.XmlElement;
 
+/**
+ * This class represents an IMAP account.
+ * 
+ * @author Siamak Haschemi
+ */
 @Entity
 public class Account extends BaseEntity {
   private static final long serialVersionUID = -7660640539811469762L;
@@ -91,9 +96,12 @@ public class Account extends BaseEntity {
   @Override
   public String toString() {
     StringBuilder s = new StringBuilder();
-    s.append("[Folder: ");
+    s.append("[Account: ");
     s.append("id=").append(id).append(" ");
-    s.append("fullName=").append(name).append(" ");
+    s.append("name=").append(name).append(" ");
+    s.append("host=").append(host).append(" ");
+    s.append("username=").append(username).append(" ");
+    s.append("password=").append(password).append(" ");
     s.append("folders=(");
     for (Folder f : folders) {
       s.append(f).append(",");

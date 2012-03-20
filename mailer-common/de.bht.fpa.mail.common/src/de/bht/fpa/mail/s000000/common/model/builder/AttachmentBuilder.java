@@ -13,7 +13,7 @@ import de.bht.fpa.mail.s000000.common.model.Attachment;
 // @formatter:off
 /**
  * This class implements the builder design pattern and provides a fluent API.
- * You can create Accounts like this:
+ * You can create Attachments like this:
  * 
  * <pre>
  * Attachment attachment = AttachmentBuilder.newAttachmentBuilder()

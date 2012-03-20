@@ -16,6 +16,13 @@ import de.bht.fpa.mail.s000000.common.model.Message;
 import de.bht.fpa.mail.s000000.common.testdata.MessageTestDataProvider;
 import de.bht.fpa.mail.s000000.common.testdata.RandomTestDataProvider;
 
+/**
+ * A executable Java Class which generates 50 messages to the 'maildata'
+ * directory.
+ * 
+ * @author Siamak Haschemi
+ * 
+ */
 public final class XMLMessageGenerator {
 
   private static final int NR_OF_MESSAGES = 50;

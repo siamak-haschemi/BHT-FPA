@@ -10,6 +10,23 @@ package de.bht.fpa.mail.s000000.common.model.builder;
 
 import de.bht.fpa.mail.s000000.common.model.Sender;
 
+//@formatter:off
+/**
+* This class implements the builder design pattern and provides a fluent API.
+* You can create Sender like this:
+* 
+* <pre>
+* Sender sender = SenderBuilder.newSenderBuilder()
+*   .id(4711L)
+*   .personal("Chuck Norris")
+*   .email("chuck@norris.de")
+* .build(); 
+* </pre>
+* 
+* @author Siamak Haschemi
+* 
+*/
+//@formatter:on
 public class SenderBuilder {
   private Long id;
   private String email;

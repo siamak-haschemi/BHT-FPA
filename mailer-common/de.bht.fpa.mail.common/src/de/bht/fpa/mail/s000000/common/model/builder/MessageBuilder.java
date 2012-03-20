@@ -22,18 +22,17 @@ import de.bht.fpa.mail.s000000.common.model.Recipient;
 //@formatter:off
 /**
 * This class implements the builder design pattern and provides a fluent API.
-* You can create Accounts like this:
+* You can create Messages like this:
 * 
 * <pre>
 * Message message = MessageBuilder.newMessageBuilder()
 *   .text("my email")
 *   .sender(SenderBuilder.newSenderBuilder()
-*     .email("he@you.de)
+*     .email("he@you.de")
 *     .build()
 *   )
 *   .sent(new Date())
-*   .build();
-* .build() 
+* .build();
 * </pre>
 * 
 * @author Siamak Haschemi

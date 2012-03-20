@@ -11,6 +11,24 @@ package de.bht.fpa.mail.s000000.common.model.builder;
 import de.bht.fpa.mail.s000000.common.model.Recipient;
 import de.bht.fpa.mail.s000000.common.model.RecipientType;
 
+//@formatter:off
+/**
+* This class implements the builder design pattern and provides a fluent API.
+* You can create Recipients like this:
+* 
+* <pre>
+* Recipient recipient = RecipientBuilder.newRecipientBuilder()
+*   .id(4711L)
+*   .personal("Chuck Norris")
+*   .email("chuck@norris.de")
+*   .type(RecipientType.TO)
+* .build(); 
+* </pre>
+* 
+* @author Siamak Haschemi
+* 
+*/
+//@formatter:on
 public class RecipientBuilder {
   private Long id;
   private String email;
