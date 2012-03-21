@@ -8,7 +8,6 @@
 
 package de.bht.fpa.mail.s000000.common;
 
-import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 

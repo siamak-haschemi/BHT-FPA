@@ -18,7 +18,9 @@
       <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
     </module>
     <module name="JavadocType">
+      <property name="severity" value="ignore"/>
       <property name="scope" value="public"/>
+      <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
     </module>
     <module name="JavadocVariable">
       <property name="severity" value="ignore"/>
@@ -26,8 +28,9 @@
       <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
     </module>
     <module name="JavadocStyle">
+      <property name="severity" value="ignore"/>
       <property name="scope" value="public"/>
-      <property name="checkEmptyJavadoc" value="true"/>
+      <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
     </module>
     <module name="ConstantName"/>
     <module name="LocalFinalVariableName"/>
@@ -127,7 +130,4 @@
     <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
   </module>
   <module name="SuppressionCommentFilter"/>
-  <module name="Header">
-    <property name="headerFile" value="/Users/siamakhaschemi/Development/src/BHT-FPA/eclipse-configuration/header.txt"/>
-  </module>
 </module>
