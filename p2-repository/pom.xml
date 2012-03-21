@@ -1,16 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
-	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-	<modelVersion>4.0.0</modelVersion>
-	<parent>
-		<groupId>de.bht.fpa</groupId>
-		<artifactId>root</artifactId>
-		<version>0.0.2-SNAPSHOT</version>
-		<relativePath>../pom.xml</relativePath>
-	</parent>
-	<groupId>de.bht.fpa</groupId>
-	<artifactId>p2-repository</artifactId>
-	<version>0.0.2-SNAPSHOT</version>
-	<packaging>eclipse-repository</packaging>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>de.bht.fpa</groupId>
+    <artifactId>root</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <relativePath>../pom.xml</relativePath>
+  </parent>
+  <groupId>de.bht.fpa</groupId>
+  <artifactId>p2-repository</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+  <packaging>eclipse-repository</packaging>
+
+  <profiles>
+    <profile>
+      <id>release</id>
+      <activation>
+        <activeByDefault>false</activeByDefault>
+      </activation>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>wagon-maven-plugin</artifactId>
+            <version>1.0-beta-3</version>
+            <executions>
+              <execution>
+                <id>deploy-p2-repository</id>
+                <phase>deploy</phase>
+                <goals>
+                  <goal>upload</goal>
+                </goals>
+                <configuration>
+                  <fromDir>${project.build.directory}/repository</fromDir>
+                  <url>scpexe://root@qyotta.de</url>
+                  <toDir>/opt/p2-repositories/de.bht.fpa/${unqualifiedVersion}.${buildQualifier}/</toDir>
+                  <serverId>qyotta</serverId>
+                </configuration>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
 </project>

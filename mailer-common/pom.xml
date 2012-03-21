@@ -5,12 +5,12 @@
   <parent>
     <groupId>de.bht.fpa</groupId>
     <artifactId>root</artifactId>
-    <version>0.0.2-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
 		<relativePath>../pom.xml</relativePath>
   </parent>
   <groupId>de.bht.fpa</groupId>
   <artifactId>mailer-common</artifactId>
-  <version>0.0.2-SNAPSHOT</version>
+  <version>1.0.0-SNAPSHOT</version>
   <packaging>pom</packaging>
   <modules>
     <module>de.bht.fpa.mail.common</module>

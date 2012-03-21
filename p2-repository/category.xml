@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature url="features/de.bht.fpa.mail.common.feature_0.0.2.qualifier.jar" id="de.bht.fpa.mail.common.feature" version="0.0.2.qualifier">
+   <feature url="features/de.bht.fpa.mail.common.feature_1.0.0.qualifier.jar" id="de.bht.fpa.mail.common.feature" version="1.0.0.qualifier">
       <category name="de.bht.fpa"/>
    </feature>
    <category-def name="de.bht.fpa" label="de.bht.fpa"/>
