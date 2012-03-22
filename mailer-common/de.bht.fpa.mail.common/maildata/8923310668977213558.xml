@@ -4,11 +4,11 @@
     <importance>low</importance>
     <read>false</read>
     <received>4317-05-25 11:21:31</received>
-    <recipient>
+    <recipients>
         <email>schmidt_trude@privatemotelroom.org</email>
         <id>3537618043128500838</id>
         <personal>heidi schwarzenegger</personal>
-    </recipient>
+    </recipients>
     <sender>
         <email>schmidt_karl@home.de</email>
         <id>3858361519441849308</id>

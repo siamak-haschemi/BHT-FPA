@@ -111,8 +111,8 @@ public class MessageTest {
     assertThat(message.getReceived(), is(notNullValue()));
     assertThat(message.getSent(), is(notNullValue()));
 
-    assertThat(message.getRecipient().size(), is(greaterThan(0)));
-    assertThat(message.getRecipient().get(0).getId(), is(notNullValue()));
+    assertThat(message.getRecipients().size(), is(greaterThan(0)));
+    assertThat(message.getRecipients().get(0).getId(), is(notNullValue()));
 
     assertThat(message.getAttachment().size(), is(0));
     assertThat(message.isRead(), is(notNullValue()));

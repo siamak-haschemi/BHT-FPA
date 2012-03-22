@@ -71,7 +71,7 @@ public class Message extends BaseEntity {
   private Date sent;
 
   @OneToMany(cascade = CascadeType.ALL)
-  private List<Recipient> recipient = new LinkedList<Recipient>();
+  private List<Recipient> recipients = new LinkedList<Recipient>();
 
   @OneToMany(cascade = CascadeType.ALL)
   private List<Attachment> attachment = new LinkedList<Attachment>();
@@ -97,12 +97,12 @@ public class Message extends BaseEntity {
     this.sender = sender;
   }
 
-  public List<Recipient> getRecipient() {
-    return recipient;
+  public List<Recipient> getRecipients() {
+    return recipients;
   }
 
-  public void setRecipient(List<Recipient> recipient) {
-    this.recipient = recipient;
+  public void setRecipients(List<Recipient> recipient) {
+    this.recipients = recipient;
   }
 
   @XmlJavaTypeAdapter(DateAdapter.class)
@@ -181,7 +181,7 @@ public class Message extends BaseEntity {
     s.append(")").append(" ");
 
     s.append("recipient=(");
-    for (Recipient r : recipient) {
+    for (Recipient r : recipients) {
       s.append(r).append(",");
     }
     s.append(")");
@@ -202,7 +202,7 @@ public class Message extends BaseEntity {
     s.append("importance=").append(importance).append(" ");
 
     s.append("recipient=(");
-    for (Recipient r : recipient) {
+    for (Recipient r : recipients) {
       s.append(r).append(",");
     }
     s.append(")");

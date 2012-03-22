@@ -54,7 +54,7 @@ public final class MessageValues {
   public static final IValue RECIPIENT = new BaseValue<Message>() {
     @Override
     public Object get(Message message) {
-      return message.getRecipient();
+      return message.getRecipients();
     }
   };
 

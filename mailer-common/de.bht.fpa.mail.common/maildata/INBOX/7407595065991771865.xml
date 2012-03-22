@@ -4,16 +4,16 @@
     <importance>normal</importance>
     <read>false</read>
     <received>4733-11-23 08:40:43</received>
-    <recipient>
+    <recipients>
         <email>schmidt_frank@hotmail.de</email>
         <id>5492469039282822310</id>
         <personal>arnold stulle</personal>
-    </recipient>
-    <recipient>
+    </recipients>
+    <recipients>
         <email>schmidt_heidi@privatemotelroom.org</email>
         <id>6132458803422160096</id>
         <personal>trude schmidt</personal>
-    </recipient>
+    </recipients>
     <sender>
         <email>schwarzenegger_lola@hotmail.de</email>
         <id>8407053150481960700</id>

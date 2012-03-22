@@ -70,7 +70,7 @@ public final class MessageSelectionListener implements ISelectionListener {
 
   private void syncRecipient(Message message) {
     StringBuilder sb = new StringBuilder();
-    for (Recipient r : message.getRecipient()) {
+    for (Recipient r : message.getRecipients()) {
       sb.append(r.getEmail());
       if (r.getPersonal() == null) {
         continue;

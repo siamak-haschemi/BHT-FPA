@@ -4,16 +4,16 @@
     <importance>normal</importance>
     <read>false</read>
     <received>3829-03-18 19:16:16</received>
-    <recipient>
+    <recipients>
         <email>schmidt_frank@hotmail.de</email>
         <id>2213362774690971126</id>
         <personal>karl schwarzenegger</personal>
-    </recipient>
-    <recipient>
+    </recipients>
+    <recipients>
         <email>stulle_arnold@home.de</email>
         <id>8272738190869920783</id>
         <personal>karl schwarzenegger</personal>
-    </recipient>
+    </recipients>
     <sender>
         <email>schwarzenegger_karl@privatemotelroom.org</email>
         <id>6797503012044883776</id>

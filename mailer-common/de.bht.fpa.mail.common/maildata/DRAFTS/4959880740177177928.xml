@@ -4,11 +4,11 @@
     <importance>normal</importance>
     <read>false</read>
     <received>3999-11-03 03:40:06</received>
-    <recipient>
+    <recipients>
         <email>schmidt_frank@myspace.com</email>
         <id>5112134735298663503</id>
         <personal>karl stulle</personal>
-    </recipient>
+    </recipients>
     <sender>
         <email>schmidt_trude@beuth-hochschule.de</email>
         <id>8768067025662839162</id>

@@ -4,26 +4,26 @@
     <importance>low</importance>
     <read>true</read>
     <received>4245-04-24 18:41:31</received>
-    <recipient>
+    <recipients>
         <email>stulle_heidi@myspace.com</email>
         <id>3871562882902363997</id>
         <personal>frank schmidt</personal>
-    </recipient>
-    <recipient>
+    </recipients>
+    <recipients>
         <email>schmidt_arnold@hotmail.de</email>
         <id>6483689325742947435</id>
         <personal>trude schwarzenegger</personal>
-    </recipient>
-    <recipient>
+    </recipients>
+    <recipients>
         <email>schmidt_heidi@privatemotelroom.org</email>
         <id>3816539931552449184</id>
         <personal>lola stulle</personal>
-    </recipient>
-    <recipient>
+    </recipients>
+    <recipients>
         <email>schwarzenegger_trude@myspace.com</email>
         <id>3173399866035204767</id>
         <personal>karl schwarzenegger</personal>
-    </recipient>
+    </recipients>
     <sender>
         <email>schwarzenegger_heidi@privatemotelroom.org</email>
         <id>1303216046179085013</id>

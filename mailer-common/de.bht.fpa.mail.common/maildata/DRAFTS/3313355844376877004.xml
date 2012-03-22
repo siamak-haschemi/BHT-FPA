@@ -4,16 +4,16 @@
     <importance>low</importance>
     <read>true</read>
     <received>4022-12-15 13:38:19</received>
-    <recipient>
+    <recipients>
         <email>stulle_arnold@myspace.com</email>
         <id>4073703294096821681</id>
         <personal>lola schmidt</personal>
-    </recipient>
-    <recipient>
+    </recipients>
+    <recipients>
         <email>schmidt_frank@hotmail.de</email>
         <id>6329280185033821997</id>
         <personal>lola stulle</personal>
-    </recipient>
+    </recipients>
     <sender>
         <email>schmidt_lola@hotmail.de</email>
         <id>5196096836626849919</id>

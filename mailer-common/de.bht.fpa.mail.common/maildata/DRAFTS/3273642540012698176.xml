@@ -4,11 +4,11 @@
     <importance>low</importance>
     <read>true</read>
     <received>3807-03-31 13:45:31</received>
-    <recipient>
+    <recipients>
         <email>stulle_arnold@myspace.com</email>
         <id>2858283929395723237</id>
         <personal>heidi schwarzenegger</personal>
-    </recipient>
+    </recipients>
     <sender>
         <email>stulle_frank@privatemotelroom.org</email>
         <id>5750843541545127144</id>

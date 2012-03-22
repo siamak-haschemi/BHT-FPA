@@ -4,11 +4,11 @@
     <importance>low</importance>
     <read>false</read>
     <received>4012-11-11 05:24:01</received>
-    <recipient>
+    <recipients>
         <email>schwarzenegger_karl@hotmail.de</email>
         <id>2674916783877981847</id>
         <personal>frank stulle</personal>
-    </recipient>
+    </recipients>
     <sender>
         <email>schwarzenegger_heidi@beuth-hochschule.de</email>
         <id>8295457297075304264</id>

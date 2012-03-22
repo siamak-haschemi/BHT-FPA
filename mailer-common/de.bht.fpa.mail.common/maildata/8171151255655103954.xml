@@ -4,11 +4,11 @@
     <importance>normal</importance>
     <read>false</read>
     <received>4217-05-31 11:54:00</received>
-    <recipient>
+    <recipients>
         <email>schwarzenegger_karl@home.de</email>
         <id>7353021378103599269</id>
         <personal>frank stulle</personal>
-    </recipient>
+    </recipients>
     <sender>
         <email>schwarzenegger_frank@privatemotelroom.org</email>
         <id>678241107040738882</id>

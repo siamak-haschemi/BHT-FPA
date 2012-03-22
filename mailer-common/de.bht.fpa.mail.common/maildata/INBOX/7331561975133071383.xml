@@ -4,21 +4,21 @@
     <importance>normal</importance>
     <read>false</read>
     <received>4758-08-09 21:21:45</received>
-    <recipient>
+    <recipients>
         <email>schmidt_trude@privatemotelroom.org</email>
         <id>150789003134243920</id>
         <personal>lola schmidt</personal>
-    </recipient>
-    <recipient>
+    </recipients>
+    <recipients>
         <email>schmidt_heidi@home.de</email>
         <id>5141217158910344328</id>
         <personal>frank stulle</personal>
-    </recipient>
-    <recipient>
+    </recipients>
+    <recipients>
         <email>schwarzenegger_arnold@privatemotelroom.org</email>
         <id>7574185318188496091</id>
         <personal>frank schmidt</personal>
-    </recipient>
+    </recipients>
     <sender>
         <email>schmidt_karl@privatemotelroom.org</email>
         <id>8946806819990322565</id>

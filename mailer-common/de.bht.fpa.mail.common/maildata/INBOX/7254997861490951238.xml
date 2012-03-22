@@ -4,26 +4,26 @@
     <importance>low</importance>
     <read>true</read>
     <received>2719-03-13 15:16:58</received>
-    <recipient>
+    <recipients>
         <email>schmidt_heidi@hotmail.de</email>
         <id>170509966248883609</id>
         <personal>karl schwarzenegger</personal>
-    </recipient>
-    <recipient>
+    </recipients>
+    <recipients>
         <email>schwarzenegger_heidi@home.de</email>
         <id>5991781877563755419</id>
         <personal>heidi stulle</personal>
-    </recipient>
-    <recipient>
+    </recipients>
+    <recipients>
         <email>schmidt_heidi@beuth-hochschule.de</email>
         <id>2831721671068824998</id>
         <personal>frank schmidt</personal>
-    </recipient>
-    <recipient>
+    </recipients>
+    <recipients>
         <email>stulle_heidi@hotmail.de</email>
         <id>4471001483787910761</id>
         <personal>trude schwarzenegger</personal>
-    </recipient>
+    </recipients>
     <sender>
         <email>stulle_lola@myspace.com</email>
         <id>6707996003514619625</id>

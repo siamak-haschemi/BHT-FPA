@@ -4,21 +4,21 @@
     <importance>low</importance>
     <read>false</read>
     <received>3588-11-23 06:09:18</received>
-    <recipient>
+    <recipients>
         <email>schwarzenegger_arnold@hotmail.de</email>
         <id>5198485699766783141</id>
         <personal>karl schwarzenegger</personal>
-    </recipient>
-    <recipient>
+    </recipients>
+    <recipients>
         <email>stulle_trude@privatemotelroom.org</email>
         <id>2375527029280870707</id>
         <personal>frank stulle</personal>
-    </recipient>
-    <recipient>
+    </recipients>
+    <recipients>
         <email>stulle_lola@myspace.com</email>
         <id>3037675242873158830</id>
         <personal>lola schmidt</personal>
-    </recipient>
+    </recipients>
     <sender>
         <email>stulle_frank@beuth-hochschule.de</email>
         <id>6560756937240523598</id>

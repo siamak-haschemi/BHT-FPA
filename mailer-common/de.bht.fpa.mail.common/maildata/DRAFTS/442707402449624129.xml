@@ -4,21 +4,21 @@
     <importance>low</importance>
     <read>false</read>
     <received>4117-01-31 20:23:57</received>
-    <recipient>
+    <recipients>
         <email>stulle_heidi@myspace.com</email>
         <id>1178140077733394809</id>
         <personal>frank schmidt</personal>
-    </recipient>
-    <recipient>
+    </recipients>
+    <recipients>
         <email>stulle_arnold@hotmail.de</email>
         <id>4389307729602248832</id>
         <personal>frank schwarzenegger</personal>
-    </recipient>
-    <recipient>
+    </recipients>
+    <recipients>
         <email>schmidt_heidi@hotmail.de</email>
         <id>9047716845836414801</id>
         <personal>heidi schwarzenegger</personal>
-    </recipient>
+    </recipients>
     <sender>
         <email>stulle_heidi@hotmail.de</email>
         <id>502883954236964320</id>

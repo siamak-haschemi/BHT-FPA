@@ -4,16 +4,16 @@
     <importance>low</importance>
     <read>true</read>
     <received>3121-07-27 12:56:39</received>
-    <recipient>
+    <recipients>
         <email>stulle_frank@hotmail.de</email>
         <id>4998545372604984924</id>
         <personal>karl schmidt</personal>
-    </recipient>
-    <recipient>
+    </recipients>
+    <recipients>
         <email>stulle_arnold@beuth-hochschule.de</email>
         <id>3207576460574632211</id>
         <personal>karl stulle</personal>
-    </recipient>
+    </recipients>
     <sender>
         <email>stulle_karl@privatemotelroom.org</email>
         <id>5805246782843541169</id>
