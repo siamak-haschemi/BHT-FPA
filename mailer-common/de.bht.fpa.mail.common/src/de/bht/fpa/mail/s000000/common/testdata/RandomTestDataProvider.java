@@ -21,6 +21,18 @@ import de.bht.fpa.mail.s000000.common.model.Importance;
 import de.bht.fpa.mail.s000000.common.model.Message;
 import de.bht.fpa.mail.s000000.common.model.builder.MessageBuilder;
 
+/**
+ * This class provides its user with a number of random {@link Message} objects
+ * for testing purposes. <br/>
+ * <br/>
+ * For example, to generate 20 {@link Message}s, do: <br/>
+ * {@code MessageTestDataProvider provider = new MessageTestDataProvider();}<br/>
+ * {@code provider.setTestDataProvider(new RandomTestDataProvider(20));}<br/>
+ * {@code List<Message> messages = provider.getMessages();}
+ * 
+ * @author Frank Schmidt
+ * @author Siamak Haschemi
+ */
 public class RandomTestDataProvider implements ITestDataProvider {
 
   private static final String[] FIRSTNAMES = { "Frank", "Arnold", "Heidi", "Trude", "Lola", "Karl", "Ursula" };

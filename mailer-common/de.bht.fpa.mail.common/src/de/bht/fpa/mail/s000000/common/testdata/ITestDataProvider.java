@@ -12,6 +12,14 @@ import java.util.Collection;
 
 import de.bht.fpa.mail.s000000.common.model.Message;
 
+/**
+ * An interface for all providers of {@link Message} objects. There could be
+ * several implementations like random, reading form file-system, or even
+ * reading from an imap server.
+ * 
+ * @author Siamak Haschemi
+ * 
+ */
 public interface ITestDataProvider {
   Collection<Message> getMessages();
 }

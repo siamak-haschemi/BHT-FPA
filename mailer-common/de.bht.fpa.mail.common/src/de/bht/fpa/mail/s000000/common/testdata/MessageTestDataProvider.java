@@ -19,10 +19,10 @@ import de.bht.fpa.mail.s000000.common.model.Message;
  * For example, to generate 20 {@link Message}s, do: <br/>
  * {@code MessageTestDataProvider provider = new MessageTestDataProvider();}<br/>
  * {@code provider.setTestDataProvider(...);}<br/>
- * {@code List<Message> messages = provider.getMessages(20);}
+ * {@code List<Message> messages = provider.getMessages();}
  * 
  * @author Frank Schmidt
- * @author Siamak Haschem
+ * @author Siamak Haschemi
  */
 public final class MessageTestDataProvider {
   private ITestDataProvider testDataProvider;
