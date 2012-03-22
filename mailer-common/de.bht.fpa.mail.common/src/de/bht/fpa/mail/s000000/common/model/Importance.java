@@ -12,6 +12,16 @@ import javax.xml.bind.annotation.XmlEnum;
 import javax.xml.bind.annotation.XmlEnumValue;
 import javax.xml.bind.annotation.XmlType;
 
+/**
+ * The importance of an email. Although there is a RFC
+ * (http://tools.ietf.org/html/rfc4021) standard for using the "importance"
+ * header to indicate the priority of an email, tools like Microsoft Outlook use
+ * other header fields ("X-Priority") with completely different values. <br/>
+ * This enumeration is therefore a symbolic value.
+ * 
+ * @author Siamak Haschemi
+ * 
+ */
 @XmlType
 @XmlEnum
 public enum Importance {

@@ -10,6 +10,12 @@ package de.bht.fpa.mail.s000000.common.model;
 
 import javax.xml.bind.annotation.XmlEnumValue;
 
+/**
+ * This class represents the type of the recipient of an e-mail.
+ * 
+ * @author Siamak Haschemi
+ * 
+ */
 public enum RecipientType {
   @XmlEnumValue("to")
   TO("to"),

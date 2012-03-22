@@ -15,6 +15,12 @@ import javax.persistence.Id;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
+/**
+ * This class represents the sender of an e-mail.
+ * 
+ * @author Siamak Haschemi
+ * 
+ */
 @Entity
 @XmlRootElement
 public class Sender extends BaseEntity {

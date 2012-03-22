@@ -29,6 +29,16 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
+/**
+ * This class represents an e-mail. It can be used together with JAXB and JPA.
+ * 
+ * <p>
+ * <i>Note that this class can be used together with JAXB and JPA.</i>
+ * </p>
+ * 
+ * @author Siamak Haschemi
+ * 
+ */
 @Entity
 @XmlRootElement
 @XmlAccessorType(XmlAccessType.PROPERTY)

@@ -13,6 +13,15 @@ import java.util.Date;
 
 import javax.xml.bind.annotation.adapters.XmlAdapter;
 
+/**
+ * This class is used by JAXB for marshalling/unmarshalling dates. It extends
+ * {@link XmlAdapter} and converts {@link Date} instances to a string
+ * representation, but also can parses a string representation back to a
+ * {@link Date} object.
+ * 
+ * @author Siamak Haschemi
+ * 
+ */
 public class DateAdapter extends XmlAdapter<String, Date> {
   private static final SimpleDateFormat DATE_FORMAT = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
