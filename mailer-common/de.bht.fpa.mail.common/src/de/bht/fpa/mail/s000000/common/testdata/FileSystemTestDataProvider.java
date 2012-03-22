@@ -24,6 +24,19 @@ import com.google.common.base.Predicate;
 
 import de.bht.fpa.mail.s000000.common.model.Message;
 
+/**
+ * This class provides its user with a number of {@link Message} objects for
+ * testing purposes. It reads the contents of a file-system directory.<br/>
+ * <br/>
+ * For example, to generate 20 {@link Message}s, do: <br/>
+ * {@code MessageTestDataProvider provider = new MessageTestDataProvider();}<br/>
+ * {@code provider.setTestDataProvider(new RandomTestDataProvider("/my/cool/place"));}
+ * <br/>
+ * {@code List<Message> messages = provider.getMessages();}
+ * 
+ * 
+ * @author Siamak Haschemi
+ */
 public class FileSystemTestDataProvider implements ITestDataProvider {
 
   private final File basePath;
