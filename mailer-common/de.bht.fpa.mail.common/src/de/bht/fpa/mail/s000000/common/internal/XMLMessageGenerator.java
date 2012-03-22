@@ -12,9 +12,9 @@ import java.io.File;
 
 import javax.xml.bind.JAXB;
 
-import de.bht.fpa.mail.s000000.common.model.Message;
-import de.bht.fpa.mail.s000000.common.testdata.MessageTestDataProvider;
-import de.bht.fpa.mail.s000000.common.testdata.RandomTestDataProvider;
+import de.bht.fpa.mail.s000000.common.mail.model.Message;
+import de.bht.fpa.mail.s000000.common.mail.testdata.MessageTestDataProvider;
+import de.bht.fpa.mail.s000000.common.mail.testdata.RandomTestDataProvider;
 
 /**
  * A executable Java Class which generates 50 messages to the 'maildata'

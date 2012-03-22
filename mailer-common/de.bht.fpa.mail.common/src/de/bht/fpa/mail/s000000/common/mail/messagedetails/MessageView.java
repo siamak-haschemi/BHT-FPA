@@ -24,7 +24,7 @@ import org.eclipse.swt.widgets.Text;
 import org.eclipse.ui.forms.widgets.FormToolkit;
 import org.eclipse.ui.part.ViewPart;
 
-import de.bht.fpa.mail.s000000.common.SWTResourceManager;
+import de.bht.fpa.mail.s000000.common.rcp.swt.SWTResourceManager;
 
 /**
  * This JFace view shows the details of one e-mail ({@link Message}) including

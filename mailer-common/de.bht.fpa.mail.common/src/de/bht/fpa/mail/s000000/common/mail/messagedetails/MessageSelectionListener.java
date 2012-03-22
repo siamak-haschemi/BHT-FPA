@@ -15,10 +15,10 @@ import org.eclipse.jface.viewers.ISelection;
 import org.eclipse.ui.ISelectionListener;
 import org.eclipse.ui.IWorkbenchPart;
 
-import de.bht.fpa.mail.s000000.common.SelectionHelper;
-import de.bht.fpa.mail.s000000.common.model.Message;
-import de.bht.fpa.mail.s000000.common.model.Recipient;
-import de.bht.fpa.mail.s000000.common.model.Sender;
+import de.bht.fpa.mail.s000000.common.mail.model.Message;
+import de.bht.fpa.mail.s000000.common.mail.model.Recipient;
+import de.bht.fpa.mail.s000000.common.mail.model.Sender;
+import de.bht.fpa.mail.s000000.common.rcp.selection.SelectionHelper;
 
 /**
  * This class responds to selections of {@link Message} objects in the workspace

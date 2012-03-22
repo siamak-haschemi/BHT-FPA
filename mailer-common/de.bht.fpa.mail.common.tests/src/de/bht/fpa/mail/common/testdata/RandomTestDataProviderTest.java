@@ -10,8 +10,8 @@ import java.util.List;
 
 import org.junit.Test;
 
-import de.bht.fpa.mail.s000000.common.model.Message;
-import de.bht.fpa.mail.s000000.common.testdata.RandomTestDataProvider;
+import de.bht.fpa.mail.s000000.common.mail.model.Message;
+import de.bht.fpa.mail.s000000.common.mail.testdata.RandomTestDataProvider;
 
 public class RandomTestDataProviderTest {
 
