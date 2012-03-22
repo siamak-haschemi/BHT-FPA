@@ -3,12 +3,12 @@
 	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
 	version="2.0" xmlns="http://java.sun.com/xml/ns/persistence">
 	<persistence-unit name="fpa" transaction-type="RESOURCE_LOCAL">
-		<class>de.bht.fpa.mail.s000000.common.model.Account</class>
-		<class>de.bht.fpa.mail.s000000.common.model.Folder</class>
-		<class>de.bht.fpa.mail.s000000.common.model.Message</class>
-		<class>de.bht.fpa.mail.s000000.common.model.Attachment</class>
-		<class>de.bht.fpa.mail.s000000.common.model.Recipient</class>
-		<class>de.bht.fpa.mail.s000000.common.model.Sender</class>
+		<class>de.bht.fpa.mail.s000000.common.mail.model.Account</class>
+		<class>de.bht.fpa.mail.s000000.common.mail.model.Folder</class>
+		<class>de.bht.fpa.mail.s000000.common.mail.model.Message</class>
+		<class>de.bht.fpa.mail.s000000.common.mail.model.Attachment</class>
+		<class>de.bht.fpa.mail.s000000.common.mail.model.Recipient</class>
+		<class>de.bht.fpa.mail.s000000.common.mail.model.Sender</class>
 		<properties>
 			<property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.EmbeddedDriver" />
 			<property name="javax.persistence.jdbc.url" value="jdbc:derby:db;create=true" />

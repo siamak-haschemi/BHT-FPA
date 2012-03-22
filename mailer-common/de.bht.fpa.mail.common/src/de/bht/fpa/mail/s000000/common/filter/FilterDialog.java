@@ -29,9 +29,9 @@ import org.eclipse.swt.widgets.Group;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Shell;
 
-import de.bht.fpa.mail.s000000.common.SelectionHelper;
-import de.bht.fpa.mail.s000000.common.filter.internal.entry.FilterEntryComponent;
-import de.bht.fpa.mail.s000000.common.filter.internal.entry.IFilterEntryChangedListener;
+import de.bht.fpa.mail.s000000.common.filter.entry.FilterEntryComponent;
+import de.bht.fpa.mail.s000000.common.filter.entry.IFilterEntryChangedListener;
+import de.bht.fpa.mail.s000000.common.rcp.selection.SelectionHelper;
 
 /**
  * This {@link Dialog} allows to create a filter combination. The user can

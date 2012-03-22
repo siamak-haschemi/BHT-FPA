@@ -1,6 +1,6 @@
 package de.bht.fpa.mail.s000000.common.table;
 
-import de.bht.fpa.mail.s000000.common.model.Message;
+import de.bht.fpa.mail.s000000.common.mail.model.Message;
 import de.ralfebert.rcputils.properties.BaseValue;
 import de.ralfebert.rcputils.properties.IValue;
 

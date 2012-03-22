@@ -1,7 +1,7 @@
 package de.bht.fpa.mail.common.model;
 
 import static com.google.common.collect.Lists.newArrayList;
-import static de.bht.fpa.mail.s000000.common.model.builder.Builders.newMessageBuilder;
+import static de.bht.fpa.mail.s000000.common.mail.model.builder.Builders.newMessageBuilder;
 import static org.hamcrest.Matchers.greaterThan;
 import static org.hamcrest.Matchers.is;
 import static org.hamcrest.Matchers.notNullValue;
@@ -27,7 +27,7 @@ import javax.xml.bind.JAXB;
 import org.junit.After;
 import org.junit.Test;
 
-import de.bht.fpa.mail.s000000.common.model.Message;
+import de.bht.fpa.mail.s000000.common.mail.model.Message;
 
 public class MessageTest {
 
