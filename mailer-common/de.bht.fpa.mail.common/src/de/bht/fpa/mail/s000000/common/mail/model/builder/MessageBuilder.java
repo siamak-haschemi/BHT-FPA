@@ -75,7 +75,7 @@ public final class MessageBuilder {
     for (RecipientBuilder recipientBuilder : recipientBuilders) {
       recipients.add(recipientBuilder.build());
     }
-    message.setRecipient(recipients);
+    message.setRecipients(recipients);
 
     List<Attachment> attachments = new ArrayList<Attachment>(attachmentBuilders.size());
     for (AttachmentBuilder attachmentBuilder : attachmentBuilders) {

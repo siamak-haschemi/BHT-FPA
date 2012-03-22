@@ -4,16 +4,16 @@
     <importance>normal</importance>
     <read>true</read>
     <received>2002-02-02 13:12:23</received>
-    <recipient>
+    <recipients>
         <email>stulle_trude@beuth-hochschule.de</email>
         <id>5513549447873149735</id>
         <personal>trude schwarzenegger</personal>
-    </recipient>
-    <recipient>
+    </recipients>
+    <recipients>
         <email>schwarzenegger_frank@hotmail.de</email>
         <id>4456520046077721875</id>
         <personal>frank schwarzenegger</personal>
-    </recipient>
+    </recipients>
     <sender>
         <email>stulle_arnold@myspace.com</email>
         <id>4326131406346533680</id>

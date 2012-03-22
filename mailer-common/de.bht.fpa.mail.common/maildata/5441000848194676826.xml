@@ -4,21 +4,21 @@
     <importance>low</importance>
     <read>false</read>
     <received>4519-07-15 20:08:01</received>
-    <recipient>
+    <recipients>
         <email>stulle_arnold@home.de</email>
         <id>2945857176074533044</id>
         <personal>trude schwarzenegger</personal>
-    </recipient>
-    <recipient>
+    </recipients>
+    <recipients>
         <email>schwarzenegger_arnold@myspace.com</email>
         <id>5910572331241456224</id>
         <personal>trude schmidt</personal>
-    </recipient>
-    <recipient>
+    </recipients>
+    <recipients>
         <email>stulle_frank@beuth-hochschule.de</email>
         <id>355774700282824557</id>
         <personal>karl schmidt</personal>
-    </recipient>
+    </recipients>
     <sender>
         <email>schwarzenegger_arnold@hotmail.de</email>
         <id>3769467706508479409</id>

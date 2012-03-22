@@ -4,16 +4,16 @@
     <importance>normal</importance>
     <read>false</read>
     <received>4160-08-18 05:37:35</received>
-    <recipient>
+    <recipients>
         <email>schmidt_lola@myspace.com</email>
         <id>5233293347063007999</id>
         <personal>heidi schwarzenegger</personal>
-    </recipient>
-    <recipient>
+    </recipients>
+    <recipients>
         <email>stulle_arnold@privatemotelroom.org</email>
         <id>7034895896656855736</id>
         <personal>lola schwarzenegger</personal>
-    </recipient>
+    </recipients>
     <sender>
         <email>stulle_heidi@privatemotelroom.org</email>
         <id>7806876875976299248</id>

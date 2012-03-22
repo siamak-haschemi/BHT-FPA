@@ -4,16 +4,16 @@
     <importance>low</importance>
     <read>false</read>
     <received>3220-04-29 12:25:03</received>
-    <recipient>
+    <recipients>
         <email>stulle_karl@myspace.com</email>
         <id>829360338241131343</id>
         <personal>heidi schwarzenegger</personal>
-    </recipient>
-    <recipient>
+    </recipients>
+    <recipients>
         <email>stulle_karl@myspace.com</email>
         <id>6071372465701675524</id>
         <personal>arnold schmidt</personal>
-    </recipient>
+    </recipients>
     <sender>
         <email>schwarzenegger_frank@myspace.com</email>
         <id>7681908227237536463</id>

@@ -4,21 +4,21 @@
     <importance>normal</importance>
     <read>false</read>
     <received>4024-06-07 19:26:26</received>
-    <recipient>
+    <recipients>
         <email>schmidt_heidi@home.de</email>
         <id>3026648417894617763</id>
         <personal>arnold schmidt</personal>
-    </recipient>
-    <recipient>
+    </recipients>
+    <recipients>
         <email>schwarzenegger_arnold@beuth-hochschule.de</email>
         <id>3314337171891672120</id>
         <personal>karl stulle</personal>
-    </recipient>
-    <recipient>
+    </recipients>
+    <recipients>
         <email>schwarzenegger_heidi@home.de</email>
         <id>2159806473675747142</id>
         <personal>heidi stulle</personal>
-    </recipient>
+    </recipients>
     <sender>
         <email>schwarzenegger_karl@beuth-hochschule.de</email>
         <id>7543849823884106923</id>

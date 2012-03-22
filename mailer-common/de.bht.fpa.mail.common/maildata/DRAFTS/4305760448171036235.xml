@@ -4,26 +4,26 @@
     <importance>low</importance>
     <read>true</read>
     <received>2614-04-20 23:59:02</received>
-    <recipient>
+    <recipients>
         <email>schwarzenegger_heidi@beuth-hochschule.de</email>
         <id>5161349052684611222</id>
         <personal>karl schwarzenegger</personal>
-    </recipient>
-    <recipient>
+    </recipients>
+    <recipients>
         <email>schwarzenegger_arnold@privatemotelroom.org</email>
         <id>2727984727310207125</id>
         <personal>trude schwarzenegger</personal>
-    </recipient>
-    <recipient>
+    </recipients>
+    <recipients>
         <email>stulle_lola@privatemotelroom.org</email>
         <id>6960068678396976025</id>
         <personal>arnold schwarzenegger</personal>
-    </recipient>
-    <recipient>
+    </recipients>
+    <recipients>
         <email>schmidt_karl@hotmail.de</email>
         <id>9005564406435117124</id>
         <personal>lola schmidt</personal>
-    </recipient>
+    </recipients>
     <sender>
         <email>schwarzenegger_frank@hotmail.de</email>
         <id>5515776429835560621</id>

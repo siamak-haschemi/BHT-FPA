@@ -4,11 +4,11 @@
     <importance>low</importance>
     <read>true</read>
     <received>3572-06-11 18:54:48</received>
-    <recipient>
+    <recipients>
         <email>schwarzenegger_trude@myspace.com</email>
         <id>3767429749086806703</id>
         <personal>karl stulle</personal>
-    </recipient>
+    </recipients>
     <sender>
         <email>schwarzenegger_arnold@hotmail.de</email>
         <id>2331265143701447710</id>

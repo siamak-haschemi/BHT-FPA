@@ -4,26 +4,26 @@
     <importance>low</importance>
     <read>false</read>
     <received>2532-07-04 12:35:41</received>
-    <recipient>
+    <recipients>
         <email>schmidt_trude@home.de</email>
         <id>6413686621945249389</id>
         <personal>arnold schmidt</personal>
-    </recipient>
-    <recipient>
+    </recipients>
+    <recipients>
         <email>schwarzenegger_karl@home.de</email>
         <id>1779754247167799380</id>
         <personal>trude schwarzenegger</personal>
-    </recipient>
-    <recipient>
+    </recipients>
+    <recipients>
         <email>stulle_arnold@hotmail.de</email>
         <id>1800737017154009847</id>
         <personal>karl schwarzenegger</personal>
-    </recipient>
-    <recipient>
+    </recipients>
+    <recipients>
         <email>schwarzenegger_arnold@myspace.com</email>
         <id>8232488950128810504</id>
         <personal>heidi schwarzenegger</personal>
-    </recipient>
+    </recipients>
     <sender>
         <email>schwarzenegger_arnold@home.de</email>
         <id>2650119828118991521</id>
