@@ -20,6 +20,17 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.xml.bind.annotation.XmlElement;
 
+/**
+ * This class represents an imap folder. It contains a list of messages, but
+ * also a list of {@link Folder}s. This implements the composite pattern.
+ * 
+ * <p>
+ * <i>Note that this class can be used together with JAXB and JPA.</i>
+ * </p>
+ * 
+ * @author Siamak Haschemi
+ * 
+ */
 @Entity
 public class Folder extends BaseEntity {
   private static final long serialVersionUID = -7660640539811469762L;

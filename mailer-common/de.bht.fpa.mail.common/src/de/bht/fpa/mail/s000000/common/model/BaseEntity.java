@@ -10,6 +10,18 @@ package de.bht.fpa.mail.s000000.common.model;
 
 import java.io.Serializable;
 
+/**
+ * An abstract base class to collect the similarities of all our entities. Note
+ * that we cannot define a primary key here, because the type of the primary
+ * keys of the sub-classes is different.
+ * 
+ * <p>
+ * <i>Note that this class can be used together with JAXB and JPA.</i>
+ * </p>
+ * 
+ * @author Siamak Haschemi
+ * 
+ */
 public abstract class BaseEntity implements Serializable, Comparable<BaseEntity> {
   private static final long serialVersionUID = -2690781787087322645L;
 

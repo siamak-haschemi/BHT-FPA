@@ -22,6 +22,10 @@ import javax.xml.bind.annotation.XmlElement;
 /**
  * This class represents an IMAP account.
  * 
+ * <p>
+ * <i>Note that this class can be used together with JAXB and JPA.</i>
+ * </p>
+ * 
  * @author Siamak Haschemi
  */
 @Entity

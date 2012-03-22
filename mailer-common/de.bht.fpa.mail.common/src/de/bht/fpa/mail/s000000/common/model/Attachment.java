@@ -16,6 +16,17 @@ import javax.persistence.Lob;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
+/**
+ * This class represents an attachment of an e-mail. The encoding of the
+ * attachement is usually Base64.
+ * 
+ * <p>
+ * <i>Note that this class can be used together with JAXB and JPA.</i>
+ * </p>
+ * 
+ * @author Siamak Haschemi
+ * 
+ */
 @Entity
 @XmlRootElement
 public class Attachment extends BaseEntity {

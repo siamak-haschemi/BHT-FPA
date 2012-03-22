@@ -17,6 +17,17 @@ import javax.persistence.Id;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
+/**
+ * This class represents the recipients of an e-mail. The type of recipient (to,
+ * cc, bcc) is specified with the {@link RecipientType} class.
+ * 
+ * <p>
+ * <i>Note that this class can be used together with JAXB and JPA.</i>
+ * </p>
+ * 
+ * @author Siamak Haschemi
+ * 
+ */
 @Entity
 @XmlRootElement
 public class Recipient extends BaseEntity {
