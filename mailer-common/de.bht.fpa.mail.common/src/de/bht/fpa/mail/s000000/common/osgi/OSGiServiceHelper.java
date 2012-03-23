@@ -15,6 +15,7 @@ import java.util.Collections;
 import org.osgi.framework.BundleContext;
 import org.osgi.framework.InvalidSyntaxException;
 import org.osgi.framework.ServiceReference;
+import org.osgi.framework.ServiceRegistration;
 
 /**
  * This class provides some convenience methods for finding registered OSGi
@@ -31,6 +32,10 @@ public final class OSGiServiceHelper {
   /**
    * This method returns one service instance, or <code>null</code> if no
    * service is currently registered.
+   * 
+   * @param bundleContext
+   *          the {@link BundleContext} of your plugin. You can obtain an
+   *          instance of the {@link BundleContext} through your Activator.
    * 
    * @param clazz
    *          The {@link Class} of the service. Typically an Java Interface
@@ -55,6 +60,9 @@ public final class OSGiServiceHelper {
    * This method returns a Collection of service instances, or an empty
    * Collection if no service is currently registered.
    * 
+   * @param bundleContext
+   *          the {@link BundleContext} of your plugin. You can obtain an
+   *          instance of the {@link BundleContext} through your Activator.
    * @param clazz
    *          The {@link Class} of the service. Typically an Java Interface
    * @return Collection of service instances of the given {@link Class} type, or
@@ -68,6 +76,9 @@ public final class OSGiServiceHelper {
    * This method returns a Collection of service instances, or an empty
    * Collection if no service is currently registered.
    * 
+   * @param bundleContext
+   *          the {@link BundleContext} of your plugin. You can obtain an
+   *          instance of the {@link BundleContext} through your Activator.
    * @param clazz
    *          The {@link Class} of the service. Typically an Java Interface
    * @param filter
@@ -93,5 +104,30 @@ public final class OSGiServiceHelper {
       result.add(bundleContext.getService(sr));
     }
     return result;
+  }
+
+  @SuppressWarnings("rawtypes")
+  private static ServiceRegistration serviceRegistration = null;
+
+  /**
+   * This method registers or updates an OSGi service in the OSGi service
+   * registry. Any previously registered service using this method is
+   * unregistered.
+   * 
+   * @param bundleContext
+   *          the {@link BundleContext} of your plugin. You can obtain an
+   *          instance of the {@link BundleContext} through your Activator.
+   * 
+   * @param clazz
+   *          The {@link Class} of the service. Typically an Java Interface *
+   * @param service
+   *          The service itself. Must be of the same type as the clazz
+   *          parameter.
+   */
+  public static <T> void updateService(BundleContext bundleContext, Class<T> clazz, T service) {
+    if (serviceRegistration != null) {
+      serviceRegistration.unregister();
+    }
+    serviceRegistration = bundleContext.registerService(clazz, service, null);
   }
 }
