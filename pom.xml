@@ -60,7 +60,7 @@
   <distributionManagement>
     <repository>
       <id>qyotta</id>
-      <url>scpexe://root@qyotta.de:/var/p2-repositories/de.bht.fpa</url>
+      <url>scpexe://root@qyotta.de:/opt/files/p2-repositories/de.bht.fpa</url>
     </repository>
   </distributionManagement>
 
