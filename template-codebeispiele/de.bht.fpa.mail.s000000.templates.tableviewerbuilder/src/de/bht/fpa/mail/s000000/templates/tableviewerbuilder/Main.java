@@ -13,7 +13,7 @@ public final class Main {
     Display display = new Display();
     Shell shell = new Shell(display);
     shell.setLayout(new FillLayout());
-    Snippet01TableViewerBuilder navigationView = new Snippet01TableViewerBuilder();
+    CityStatsView navigationView = new CityStatsView();
     navigationView.createPartControl(shell);
 
     shell.open();

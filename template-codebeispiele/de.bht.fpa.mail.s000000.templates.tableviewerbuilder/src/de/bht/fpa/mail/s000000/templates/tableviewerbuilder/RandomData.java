@@ -23,6 +23,16 @@ import org.eclipse.core.runtime.Assert;
  */
 public class RandomData {
 
+  private static final int HOUSE_NUMBER_MAX = 100;
+
+  private static final int NR_DIGITS_PHONE_NUMBER = 7;
+
+  private static final int NR_DIGITS_PHONE_NUMBER_CITY = 3;
+
+  private static final int NR_DIGITS_SOME = 10;
+
+  private static final int NR_DIGITS_ZIP_CODE = 5;
+
   private int seed;
 
   public static final String[] GIVEN_NAMES = new String[] { "Alexander", "Andreas", "Angela", "Angelika", "Barbara",
@@ -107,11 +117,11 @@ public class RandomData {
   }
 
   public String someStreet() {
-    return someElement(LAST_NAMES) + "straße " + someNumber(1, 100);
+    return someElement(LAST_NAMES) + "straße " + someNumber(1, HOUSE_NUMBER_MAX);
   }
 
   public String someZipCode() {
-    return someDigits(5);
+    return someDigits(NR_DIGITS_ZIP_CODE);
   }
 
   public String someCity() {
@@ -122,7 +132,7 @@ public class RandomData {
     StringBuilder string = new StringBuilder();
     Random random = new Random(seed);
     for (int i = 1; i <= count; i++) {
-      string.append(String.valueOf(random.nextInt(10)));
+      string.append(String.valueOf(random.nextInt(NR_DIGITS_SOME)));
     }
     return string.toString();
   }
@@ -145,7 +155,7 @@ public class RandomData {
   }
 
   public String somePhoneNumber(String separator) {
-    return "0" + someDigits(3) + separator + someDigits(7);
+    return "0" + someDigits(NR_DIGITS_PHONE_NUMBER_CITY) + separator + someDigits(NR_DIGITS_PHONE_NUMBER);
   }
 
   public <T extends Enum<T>> T someValue(Class<T> enumType) {
