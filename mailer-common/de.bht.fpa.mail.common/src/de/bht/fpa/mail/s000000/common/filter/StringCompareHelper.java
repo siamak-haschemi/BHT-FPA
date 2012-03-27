@@ -12,21 +12,34 @@ public final class StringCompareHelper {
 
   }
 
-  public static boolean matches(String a, String b, FilterOperator filterOperator) {
-    if (a == null || b == null) {
+  /**
+   * Compare two strings using on of the {@link FilterOperator}s.
+   * 
+   * @param target
+   *          the string against which the toMatch param is matched
+   * @param toMatch
+   *          the string which is matched against the target
+   * @param filterOperator
+   *          the {@link FilterOperator} which decides how the comparison is
+   *          done
+   * @return <code>true</code> if the strings match (based on the filterOperator
+   *         param), or <code>false</code>.
+   */
+  public static boolean matches(String target, String toMatch, FilterOperator filterOperator) {
+    if (target == null || toMatch == null) {
       return false;
     }
     switch (filterOperator) {
     case CONTAINS:
-      return a.contains(b);
+      return target.contains(toMatch);
     case CONTAINS_NOT:
-      return !a.contains(b);
+      return !target.contains(toMatch);
     case ENDS_WITH:
-      return a.endsWith(b);
+      return target.endsWith(toMatch);
     case IS:
-      return a.equals(b);
+      return target.equals(toMatch);
     case STARTS_WITH:
-      return a.startsWith(b);
+      return target.startsWith(toMatch);
     default:
       throw new IllegalStateException("Unhandeled filter operator: " + filterOperator);
     }
