@@ -1,6 +1,5 @@
 package de.bht.fpa.homeautomation.remote.v4.command;
 
-import de.bht.fpa.homeautomation.remote.v4.command.ICommand;
 
 /**
  * This class uses the Null Object Pattern. It implements the {@link ICommand},

@@ -6,9 +6,9 @@ import static org.junit.Assert.assertThat;
 import org.junit.Before;
 import org.junit.Test;
 
+import de.bht.fpa.strategypattern.v3.AFormatter;
 import de.bht.fpa.strategypattern.v3.BracesAndSemicolonFormatter;
 import de.bht.fpa.strategypattern.v3.Editor;
-import de.bht.fpa.strategypattern.v3.AFormatter;
 import de.bht.fpa.strategypattern.v3.XMLFormatter;
 
 public class EditorV3Test {

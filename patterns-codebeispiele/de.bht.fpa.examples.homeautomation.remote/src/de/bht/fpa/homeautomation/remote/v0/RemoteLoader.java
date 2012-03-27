@@ -1,6 +1,5 @@
 package de.bht.fpa.homeautomation.remote.v0;
 
-import de.bht.fpa.homeautomation.remote.v0.Remote;
 import de.bht.fpa.homeautomation.vendors.GarageDoor;
 import de.bht.fpa.homeautomation.vendors.OutdoorLight;
 

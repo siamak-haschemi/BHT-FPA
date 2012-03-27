@@ -2,11 +2,11 @@ package uebung;
 
 public interface IGermanNavigation {
 
-	// distance to target in km
-	double getDistanceToTarget();
+  // distance to target in km
+  double getDistanceToTarget();
 
-	boolean hasRadarWarning();
+  boolean hasRadarWarning();
 
-	void start();
+  void start();
 
 }
