@@ -2,8 +2,8 @@ package uebung;
 
 public interface IBritishNavigation {
 
-	// distance to target in miles
-	double getDistanceToTarget();
+  // distance to target in miles
+  double getDistanceToTarget();
 
-	void go();
+  void go();
 }

@@ -22,8 +22,17 @@ import de.ralfebert.rcputils.tables.TableViewerBuilder;
 import de.ralfebert.rcputils.tables.format.Formatter;
 import de.ralfebert.rcputils.tables.format.StringValueFormatter;
 
-public class Snippet01TableViewerBuilder extends ViewPart {
+public class CityStatsView extends ViewPart {
 
+  private static final double AREA_KM2_MAX = 800d;
+  private static final double AREA_KM2_MIN = 100d;
+  private static final int PUPULATION_MAX = 10000000;
+  private static final int PUPULATION_MIN = 10000;
+  private static final int NR_OF_TEST_CITIES = 50;
+  private static final int BEIGHBOUR_CITY_PERCENT_WITH = 100;
+  private static final int FOUNDING_DATE_PERCENT_WITH = 100;
+  private static final int CITY_COLUMN_PERCENT_WIDTH = 60;
+  private static final int BIG_CITY_MIN = 5000000;
   private TableViewer tableViewer;
 
   @Override
@@ -33,7 +42,7 @@ public class Snippet01TableViewerBuilder extends ViewPart {
 
     ColumnBuilder city = t.createColumn("City");
     city.bindToProperty("name");
-    city.setPercentWidth(60);
+    city.setPercentWidth(CITY_COLUMN_PERCENT_WIDTH);
     city.useAsDefaultSortColumn();
     city.makeEditable();
     city.build();
@@ -46,10 +55,12 @@ public class Snippet01TableViewerBuilder extends ViewPart {
       @Override
       public void formatCell(ViewerCell cell, Object value) {
         int population = (Integer) value;
-        int color = population > 5000000 ? SWT.COLOR_RED : SWT.COLOR_BLACK;
+        int color = SWT.COLOR_BLACK;
+        if (population > BIG_CITY_MIN) {
+          color = SWT.COLOR_RED;
+        }
         cell.setForeground(cell.getControl().getDisplay().getSystemColor(color));
       }
-
     });
     population.alignRight();
     population.makeEditable(Formatter.forInt());
@@ -78,13 +89,13 @@ public class Snippet01TableViewerBuilder extends ViewPart {
     StringValueFormatter dateFormat = Formatter.forDate(SimpleDateFormat.getDateInstance(SimpleDateFormat.MEDIUM));
     foundingDate.format(dateFormat);
     foundingDate.alignCenter();
-    foundingDate.setPixelWidth(100);
+    foundingDate.setPixelWidth(FOUNDING_DATE_PERCENT_WITH);
     foundingDate.makeEditable(dateFormat);
     foundingDate.build();
 
     ColumnBuilder neighborCity = t.createColumn("Neighbor city");
     neighborCity.bindToProperty("neighborCity");
-    neighborCity.setPixelWidth(100);
+    neighborCity.setPixelWidth(BEIGHBOUR_CITY_PERCENT_WITH);
     ComboBoxViewerCellEditor cityComboEditor = new ComboBoxViewerCellEditor(t.getTable(), SWT.READ_ONLY);
     cityComboEditor.setContentProvider(ArrayContentProvider.getInstance());
     cityComboEditor.setLabelProvider(new LabelProvider());
@@ -100,8 +111,11 @@ public class Snippet01TableViewerBuilder extends ViewPart {
   private List<City> createSomeData() {
     List<City> data = new ArrayList<City>();
     RandomData randomData = new RandomData();
-    for (int i = 0; i < 50; i++) {
-      CityStats stats = new CityStats(randomData.someNumber(10000, 10000000), randomData.someNumber(100d, 800d));
+    for (int i = 0; i < NR_OF_TEST_CITIES; i++) {
+      int population = randomData.someNumber(PUPULATION_MIN, PUPULATION_MAX);
+      double areaKm2 = randomData.someNumber(AREA_KM2_MIN, AREA_KM2_MAX);
+      CityStats stats = new CityStats(population, areaKm2);
+
       data.add(new City(randomData.someCity(), new Date(), stats, randomData.someCity()));
       randomData.newData();
     }
