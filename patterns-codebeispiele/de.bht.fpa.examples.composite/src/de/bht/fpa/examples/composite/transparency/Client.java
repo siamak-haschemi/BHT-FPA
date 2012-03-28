@@ -9,12 +9,12 @@ import java.util.List;
  * {@link Person}s ( {@link Woman} and {@link Men}).
  * </p>
  * <p>
- * The variation is <i>transparent</i>, because very the {@link Person} class
- * contains every method of every sub-type (for example the
+ * The variation is <i>transparent</i>, because the {@link Person} class
+ * contains every method of every sub-class (for example the
  * {@link Woman#addChild(Person)}, {@link Woman#removeChild(Person)}, and the
- * {@link Woman#getChildren()}). The client can therefore use every Person
- * sub-type <i>transparently</i> and don't care if the method is implemented, or
- * not.
+ * {@link Woman#getChildren()}). The client can therefore use every
+ * {@link Person} sub-class <i>transparently</i> and don't care if methods so
+ * something useful, or not.
  * </p>
  */
 public final class Client {
