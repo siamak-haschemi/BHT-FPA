@@ -14,7 +14,7 @@ public class Woman extends Person {
   }
 
   /**
-   * Since a Women has children, we have to override this method and store the
+   * Since a Woman has children, we have to override this method and store the
    * given {@link Person}.
    * 
    * @see de.bht.fpa.examples.composite.transparency.Person#addChild(de.bht.fpa.examples.composite.transparency.Person)
@@ -25,7 +25,7 @@ public class Woman extends Person {
   }
 
   /**
-   * Since a Women has children, we have to override this method and remove the
+   * Since a Woman has children, we have to override this method and remove the
    * given {@link Person}.
    * 
    * @see de.bht.fpa.examples.composite.transparency.Person#removeChild(de.bht.fpa.examples.composite.transparency.Person)
@@ -36,7 +36,7 @@ public class Woman extends Person {
   }
 
   /**
-   * Since a Women has children, we have to override this method and return the
+   * Since a Woman has children, we have to override this method and return the
    * list of our children.
    * 
    * @see de.bht.fpa.examples.composite.transparency.Person#getChildren()

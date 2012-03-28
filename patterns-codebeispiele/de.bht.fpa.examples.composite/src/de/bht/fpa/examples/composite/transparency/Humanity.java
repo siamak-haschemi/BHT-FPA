@@ -6,7 +6,7 @@ public class Humanity {
     Person abby = new Woman("Abby");
 
     // children of Abby
-    Person sabine = new Woman("Sabine"); // see how we can treat the Women class
+    Person sabine = new Woman("Sabine"); // see how we can treat the Woman class
     Person klaus = new Man("Klaus"); // ... and the Man class transparently as
                                      // Persons.
     Person tom = new Man("Tom");
