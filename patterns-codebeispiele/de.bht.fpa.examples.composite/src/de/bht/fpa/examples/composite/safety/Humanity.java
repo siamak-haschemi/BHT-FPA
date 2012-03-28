@@ -1,31 +1,36 @@
 package de.bht.fpa.examples.composite.safety;
 
-public class Humanity {
+public final class Humanity {
+  private Humanity() {
+  }
 
-  public static Person getFirstPerson() {
+  public static Person createPersonHierarchy() {
     Woman abby = new Woman("Abby");
+
+    // We cannot use the Person class here, since it has not the addChildren
+    // method. This won't work:
+    // Person abby = new Woman("Sabine");
 
     // children of Abby
     Woman sabine = new Woman("Sabine");
-    Man klaus = new Man("Klaus");
-    Man tom = new Man("Tom");
+    Person klaus = new Man("Klaus");
+    Person tom = new Man("Tom");
     abby.addChild(sabine);
     abby.addChild(klaus);
     abby.addChild(tom);
 
     // children of Sabine
     Woman maria = new Woman("Maria");
-    Man jens = new Man("Jens");
+    Person jens = new Man("Jens");
     sabine.addChild(maria);
     sabine.addChild(jens);
 
     // children of Maria
-    Man friedrich = new Man("Friedrich");
-    Man rudolf = new Man("Rudolf");
+    Person friedrich = new Man("Friedrich");
+    Person rudolf = new Man("Rudolf");
     maria.addChild(friedrich);
     maria.addChild(rudolf);
 
     return abby;
   }
-
 }
