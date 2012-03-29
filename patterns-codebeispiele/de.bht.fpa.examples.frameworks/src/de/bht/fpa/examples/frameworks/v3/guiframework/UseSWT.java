@@ -1,4 +1,4 @@
-package de.bht.fpa.examples.frameworks.framework;
+package de.bht.fpa.examples.frameworks.v3.guiframework;
 
 import org.apache.commons.validator.routines.EmailValidator;
 import org.eclipse.swt.SWT;
@@ -17,12 +17,12 @@ import org.eclipse.swt.widgets.Text;
 
 import de.bht.fpa.examples.frameworks.Person;
 
-public final class InversionOfControl {
+public final class UseSWT {
   private static Text txtName;
   private static StyledText txtEmail;
   private static Button btnSubmit;
 
-  private InversionOfControl() {
+  private UseSWT() {
 
   }
 

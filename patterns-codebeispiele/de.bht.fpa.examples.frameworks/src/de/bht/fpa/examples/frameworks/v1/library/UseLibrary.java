@@ -1,4 +1,4 @@
-package de.bht.fpa.examples.frameworks.selfcontrolwithlibrary;
+package de.bht.fpa.examples.frameworks.v1.library;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -7,7 +7,7 @@ import org.apache.commons.validator.routines.EmailValidator;
 
 import de.bht.fpa.examples.frameworks.Person;
 
-public class SelfControlWithLibrary {
+public class UseLibrary {
   public static void main(String[] args) throws Exception {
     BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
@@ -22,6 +22,8 @@ public class SelfControlWithLibrary {
 
     Person person = new Person(name, email);
     System.out.println(person);
+
+    reader.close();
   }
 
   private static boolean emailIsValid(String email) {

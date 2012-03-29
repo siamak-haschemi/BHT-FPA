@@ -1,11 +1,11 @@
-package de.bht.fpa.examples.frameworks.selfcontrol;
+package de.bht.fpa.examples.frameworks.v0.own;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
 import de.bht.fpa.examples.frameworks.Person;
 
-public class SelfControl {
+public class EverythingOnOurOwn {
   public static void main(String[] args) throws Exception {
     BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
@@ -20,6 +20,8 @@ public class SelfControl {
 
     Person person = new Person(name, email);
     System.out.println(person);
+
+    reader.close();
   }
 
   private static boolean emailIsValid(String email) {
