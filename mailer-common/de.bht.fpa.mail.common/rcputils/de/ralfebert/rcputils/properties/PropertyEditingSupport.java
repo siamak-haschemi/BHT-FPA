@@ -25,6 +25,10 @@ import de.bht.fpa.mail.s000000.common.internal.Activator;
 @SuppressWarnings("unchecked")
 public class PropertyEditingSupport extends EditingSupport {
 
+  /**
+   * 
+   */
+  private static final long serialVersionUID = 5832990301061558748L;
   private final CellEditor cellEditor;
   private final IValue valueHandler;
   @SuppressWarnings("rawtypes")

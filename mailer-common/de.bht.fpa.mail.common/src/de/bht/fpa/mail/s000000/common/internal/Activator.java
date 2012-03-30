@@ -12,6 +12,7 @@ import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.io.Writer;
 
+import org.eclipse.core.runtime.IStatus;
 import org.eclipse.core.runtime.Status;
 import org.eclipse.jface.resource.ImageDescriptor;
 import org.eclipse.ui.plugin.AbstractUIPlugin;
@@ -93,7 +94,7 @@ public class Activator extends AbstractUIPlugin {
       e.printStackTrace(new PrintWriter(result));
       System.err.println(result.toString());
     } else {
-      getInstance().getLog().log(new Status(Status.ERROR, Activator.PLUGIN_ID, -1, e.getMessage(), e));
+      getInstance().getLog().log(new Status(IStatus.ERROR, Activator.PLUGIN_ID, -1, e.getMessage(), e));
     }
   }
 }

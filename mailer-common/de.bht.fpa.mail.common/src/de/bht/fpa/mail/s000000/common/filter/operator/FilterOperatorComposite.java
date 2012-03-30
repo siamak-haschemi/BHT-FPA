@@ -14,6 +14,11 @@ import de.bht.fpa.mail.s000000.common.filter.FilterOperator;
 
 public abstract class FilterOperatorComposite<T> extends Composite {
 
+  /**
+   * 
+   */
+  private static final long serialVersionUID = 4597768579776201168L;
+
   public FilterOperatorComposite(Composite parent, int style) {
     super(parent, style);
   }

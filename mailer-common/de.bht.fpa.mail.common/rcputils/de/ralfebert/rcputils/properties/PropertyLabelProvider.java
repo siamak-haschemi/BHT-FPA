@@ -23,6 +23,10 @@ import de.bht.fpa.mail.s000000.common.internal.Activator;
 @SuppressWarnings("unchecked")
 public class PropertyLabelProvider extends LabelProvider {
 
+  /**
+   * 
+   */
+  private static final long serialVersionUID = -3763345211033445112L;
   private final IValue valueHandler;
   @SuppressWarnings("rawtypes")
   private IValueFormatter valueFormatter;

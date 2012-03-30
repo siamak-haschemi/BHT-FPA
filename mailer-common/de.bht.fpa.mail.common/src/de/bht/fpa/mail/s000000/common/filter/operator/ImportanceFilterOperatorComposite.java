@@ -23,6 +23,10 @@ import de.bht.fpa.mail.s000000.common.rcp.selection.SelectionHelper;
 
 public final class ImportanceFilterOperatorComposite extends FilterOperatorComposite<Importance> {
 
+  /**
+   * 
+   */
+  private static final long serialVersionUID = -1222233167214238185L;
   private final FilterOperator operator;
   private ComboViewer comboViewer;
 
@@ -53,6 +57,11 @@ public final class ImportanceFilterOperatorComposite extends FilterOperatorCompo
     comboValue.setLayoutData(new GridData(SWT.LEFT, SWT.CENTER, true, false, 1, 1));
     comboViewer.setContentProvider(ArrayContentProvider.getInstance());
     comboViewer.setLabelProvider(new LabelProvider() {
+      /**
+       * 
+       */
+      private static final long serialVersionUID = 8163486960838915204L;
+
       @Override
       public String getText(Object element) {
         return ((Importance) element).value();

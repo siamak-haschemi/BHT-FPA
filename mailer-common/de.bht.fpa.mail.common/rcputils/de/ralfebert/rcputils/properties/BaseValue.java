@@ -19,11 +19,13 @@ package de.ralfebert.rcputils.properties;
  */
 public abstract class BaseValue<T> implements IValue {
 
+  @Override
   @SuppressWarnings("unchecked")
   public final Object getValue(Object element) {
     return get((T) element);
   }
 
+  @Override
   @SuppressWarnings("unchecked")
   public void setValue(Object element, Object value) {
     set((T) element, value);

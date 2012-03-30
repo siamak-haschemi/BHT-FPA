@@ -32,6 +32,10 @@ import de.ralfebert.rcputils.tables.TableViewerBuilder;
  */
 public final class SortColumnComparator extends ViewerComparator {
 
+  /**
+   * 
+   */
+  private static final long serialVersionUID = 1496829486656752050L;
   public static final String SORT_BY = SortColumnComparator.class.getName() + ".sortBy";
 
   @SuppressWarnings({ "unchecked", "rawtypes" })

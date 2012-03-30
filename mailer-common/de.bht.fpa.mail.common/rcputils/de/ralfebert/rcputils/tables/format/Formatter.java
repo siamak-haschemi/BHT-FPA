@@ -82,10 +82,12 @@ public class Formatter {
   public static IValueFormatter<Object, Object> fromConverters(final IConverter format, final IConverter parse) {
     return new IValueFormatter<Object, Object>() {
 
+      @Override
       public Object format(Object obj) {
         return format.convert(obj);
       }
 
+      @Override
       public Object parse(Object obj) {
         return parse.convert(obj);
       }
@@ -98,10 +100,12 @@ public class Formatter {
   public static IValueFormatter<Integer, String> forInt() {
     return new IValueFormatter<Integer, String>() {
 
+      @Override
       public String format(Integer obj) {
         return Integer.toString(obj);
       }
 
+      @Override
       public Integer parse(String obj) {
         return Integer.parseInt(obj);
       }
