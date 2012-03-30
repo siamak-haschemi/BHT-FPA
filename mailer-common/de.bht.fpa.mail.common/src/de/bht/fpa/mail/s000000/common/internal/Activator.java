@@ -8,6 +8,10 @@
 
 package de.bht.fpa.mail.s000000.common.internal;
 
+import java.io.PrintWriter;
+import java.io.StringWriter;
+import java.io.Writer;
+
 import org.eclipse.core.runtime.Status;
 import org.eclipse.jface.resource.ImageDescriptor;
 import org.eclipse.ui.plugin.AbstractUIPlugin;
@@ -84,6 +88,12 @@ public class Activator extends AbstractUIPlugin {
    *          the {@link Exception} to log
    */
   public static void logException(Exception e) {
-    getInstance().getLog().log(new Status(Status.ERROR, Activator.PLUGIN_ID, -1, e.getMessage(), e));
+    if (getInstance() == null) {
+      final Writer result = new StringWriter();
+      e.printStackTrace(new PrintWriter(result));
+      System.err.println(result.toString());
+    } else {
+      getInstance().getLog().log(new Status(Status.ERROR, Activator.PLUGIN_ID, -1, e.getMessage(), e));
+    }
   }
 }
