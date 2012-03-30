@@ -13,7 +13,6 @@ import org.eclipse.swt.browser.Browser;
 import org.eclipse.swt.custom.ScrolledComposite;
 import org.eclipse.swt.events.ControlAdapter;
 import org.eclipse.swt.events.ControlEvent;
-import org.eclipse.swt.graphics.Font;
 import org.eclipse.swt.graphics.Rectangle;
 import org.eclipse.swt.layout.GridData;
 import org.eclipse.swt.layout.GridLayout;
@@ -23,8 +22,6 @@ import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Text;
 import org.eclipse.ui.forms.widgets.FormToolkit;
 import org.eclipse.ui.part.ViewPart;
-
-import de.bht.fpa.mail.s000000.common.rcp.swt.SWTResourceManager;
 
 /**
  * This JFace view shows the details of one e-mail ({@link Message}) including
@@ -64,9 +61,6 @@ import de.bht.fpa.mail.s000000.common.rcp.swt.SWTResourceManager;
  * 
  */
 public class MessageView extends ViewPart {
-  private static final String FONT_NAME = "Lucida Grande"; //$NON-NLS-1$
-  private static final int FONT_SIZE = 11;
-
   public MessageView() {
   }
 
@@ -101,7 +95,6 @@ public class MessageView extends ViewPart {
 
     Composite composite = new Composite(scrolledComposite, SWT.NONE);
     toolkit.adapt(composite);
-    toolkit.paintBordersFor(composite);
     composite.setLayout(new GridLayout(1, false));
 
     Composite mailHeader = new Composite(composite, SWT.NONE);
@@ -109,53 +102,44 @@ public class MessageView extends ViewPart {
     mailHeader.setLayout(new GridLayout(2, false));
     toolkit.adapt(mailHeader);
 
-    Font textFont = SWTResourceManager.getFont(FONT_NAME, FONT_SIZE, SWT.BOLD);
     Label lblFrom = new Label(mailHeader, SWT.WRAP);
     lblFrom.setLayoutData(new GridData(SWT.RIGHT, SWT.TOP, false, false, 1, 1));
     lblFrom.setAlignment(SWT.RIGHT);
-    lblFrom.setFont(textFont);
     lblFrom.setEnabled(false);
     toolkit.adapt(lblFrom, true, true);
     lblFrom.setText("Von");
 
     txtFrom = new Text(mailHeader, SWT.READ_ONLY | SWT.WRAP | SWT.MULTI);
-    txtFrom.setText("udo@ural-mountain.org");
     txtFrom.setLayoutData(new GridData(SWT.FILL, SWT.TOP, true, false, 1, 1));
     toolkit.adapt(txtFrom, true, true);
 
     Label lblAbout = new Label(mailHeader, SWT.WRAP);
     lblAbout.setLayoutData(new GridData(SWT.RIGHT, SWT.TOP, false, false, 1, 1));
     lblAbout.setAlignment(SWT.RIGHT);
-    lblAbout.setFont(textFont);
     toolkit.adapt(lblAbout, true, true);
     lblAbout.setText("Betreff");
 
     txtSubject = new Text(mailHeader, SWT.READ_ONLY | SWT.WRAP | SWT.MULTI);
-    txtSubject.setText("New Daisy/Cocoon portal powered website");
     txtSubject.setLayoutData(new GridData(SWT.FILL, SWT.TOP, true, false, 1, 1));
     toolkit.adapt(txtSubject, true, true);
 
     Label lblDate = new Label(mailHeader, SWT.NONE);
     lblDate.setLayoutData(new GridData(SWT.RIGHT, SWT.TOP, false, false, 1, 1));
     lblDate.setAlignment(SWT.RIGHT);
-    lblDate.setFont(textFont);
     toolkit.adapt(lblDate, true, true);
     lblDate.setText("Empfangen");
 
     txtReceived = new Text(mailHeader, SWT.READ_ONLY | SWT.WRAP | SWT.MULTI);
-    txtReceived.setText("2011-11-23 08:30:00");
     txtReceived.setLayoutData(new GridData(SWT.FILL, SWT.TOP, true, false, 1, 1));
     toolkit.adapt(txtReceived, true, true);
 
     Label lblTo = new Label(mailHeader, SWT.WRAP);
     lblTo.setLayoutData(new GridData(SWT.RIGHT, SWT.TOP, false, false, 1, 1));
     lblTo.setAlignment(SWT.RIGHT);
-    lblTo.setFont(textFont);
     toolkit.adapt(lblTo, true, true);
     lblTo.setText("Empfänger");
 
     txtTo = new Text(mailHeader, SWT.READ_ONLY | SWT.WRAP | SWT.MULTI);
-    txtTo.setText("manfred@mustermann.de");
     txtTo.setLayoutData(new GridData(SWT.FILL, SWT.TOP, true, false, 1, 1));
     toolkit.adapt(txtTo, true, true);
 
@@ -165,10 +149,6 @@ public class MessageView extends ViewPart {
     toolkit.adapt(label, true, true);
 
     browserText = new Browser(composite, SWT.WRAP);
-    browserText
-        .setText("Hello,<br/>since a few days we are online with http://www.intergator.de which is based<br/>..."
-            + "<br/>---------------------------------------------------------------------<br/>To unsubscribe, e-mail: "
-            + "users-unsubscribe@cocoon.apache.org<br/>For additional commands, e-mail: users-help@cocoon.apache.org");
     browserText.setLayoutData(new GridData(SWT.FILL, SWT.FILL, true, true, 1, 1));
     toolkit.adapt(browserText, true, true);
 
