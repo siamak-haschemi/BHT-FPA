@@ -35,7 +35,7 @@ public final class Client {
     }
     System.out.println(person.getClass().getSimpleName() + " " + person.getName());
 
-    // The Woman class does something useful is the getChildren method, but the
+    // The Woman class does something useful in the getChildren method, but the
     // Men class does not. However, we can treat every Person sub-type
     // (Woman/Men) equal, and call on each of them the getChildren method.
     List<Person> children = person.getChildren();
