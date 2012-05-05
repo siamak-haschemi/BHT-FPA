@@ -25,11 +25,6 @@ import de.bht.fpa.mail.s000000.common.filter.FilterOperator;
 import de.bht.fpa.mail.s000000.common.rcp.selection.SelectionHelper;
 
 public final class DefaultFilterOperatorComposite extends FilterOperatorComposite<String> {
-
-  /**
-   * 
-   */
-  private static final long serialVersionUID = 3323043763498220285L;
   private FilterOperator operator;
   private Text text;
 
@@ -55,11 +50,6 @@ public final class DefaultFilterOperatorComposite extends FilterOperatorComposit
     combo.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, false, false, 1, 1));
     comboViewer.setContentProvider(ArrayContentProvider.getInstance());
     comboViewer.setLabelProvider(new LabelProvider() {
-      /**
-       * 
-       */
-      private static final long serialVersionUID = 2744560799235400700L;
-
       @Override
       public String getText(Object element) {
         if (!(element instanceof FilterOperator)) {

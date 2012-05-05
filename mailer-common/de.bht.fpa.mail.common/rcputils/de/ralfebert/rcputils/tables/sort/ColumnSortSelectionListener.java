@@ -26,11 +26,6 @@ import org.eclipse.swt.widgets.TableColumn;
  * @author Ralf Ebert <info@ralfebert.de>
  */
 public final class ColumnSortSelectionListener extends SelectionAdapter {
-
-  /**
-   * 
-   */
-  private static final long serialVersionUID = -2925780980773362186L;
   private final TableViewer viewer;
 
   public ColumnSortSelectionListener(TableViewer viewer) {

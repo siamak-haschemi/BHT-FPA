@@ -86,11 +86,6 @@ public class MessageView extends ViewPart {
     scrolledComposite.setExpandHorizontal(true);
     scrolledComposite.setExpandVertical(true);
     scrolledComposite.addControlListener(new ControlAdapter() {
-      /**
-       * 
-       */
-      private static final long serialVersionUID = 3521137028575541924L;
-
       @Override
       public void controlResized(ControlEvent e) {
         Rectangle r = scrolledComposite.getClientArea();

@@ -61,11 +61,6 @@ import de.bht.fpa.mail.s000000.common.rcp.selection.SelectionHelper;
  * 
  */
 public final class FilterDialog extends Dialog {
-
-  /**
-   * 
-   */
-  private static final long serialVersionUID = -3823993001148920336L;
   private static final int HEIGHT = 300;
   private static final int WIDTH = 600;
   private static final int NR_OF_COLUMNS = 3;
@@ -137,11 +132,6 @@ public final class FilterDialog extends Dialog {
     groupFilterComboViewer = new ComboViewer(unionIntersectionComponent, SWT.READ_ONLY);
     groupFilterComboViewer.setContentProvider(ArrayContentProvider.getInstance());
     groupFilterComboViewer.setLabelProvider(new LabelProvider() {
-      /**
-       * 
-       */
-      private static final long serialVersionUID = -7603386700899500623L;
-
       @Override
       public String getText(Object element) {
         return ((FilterGroupType) element).value();

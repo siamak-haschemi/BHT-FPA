@@ -24,11 +24,6 @@ import de.ralfebert.rcputils.tables.ICellFormatter;
  */
 @SuppressWarnings("unchecked")
 public class PropertyCellLabelProvider extends CellLabelProvider {
-
-  /**
-   * 
-   */
-  private static final long serialVersionUID = 3896848269350183260L;
   private final IValue valueHandler;
   @SuppressWarnings("rawtypes")
   private IValueFormatter valueFormatter;

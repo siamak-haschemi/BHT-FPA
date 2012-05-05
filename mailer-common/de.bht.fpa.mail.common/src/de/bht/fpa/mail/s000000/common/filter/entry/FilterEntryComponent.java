@@ -20,11 +20,6 @@ import de.bht.fpa.mail.s000000.common.filter.FilterCombination;
 import de.bht.fpa.mail.s000000.common.filter.type.FilterTypeComponent;
 
 public final class FilterEntryComponent extends Composite {
-
-  /**
-   * 
-   */
-  private static final long serialVersionUID = -3666224769394877257L;
   private static final int NR_OF_COLUMNS = 3;
   private IFilterEntryChangedListener filterChangedListener = IFilterEntryChangedListener.NULL;
   private final FilterTypeComponent filterTypeComponent;
@@ -48,11 +43,6 @@ public final class FilterEntryComponent extends Composite {
     remBtn = new Button(this, SWT.NONE);
     remBtn.setText("-");
     remBtn.addSelectionListener(new SelectionAdapter() {
-      /**
-       * 
-       */
-      private static final long serialVersionUID = 6123187741461168559L;
-
       @Override
       public void widgetSelected(SelectionEvent e) {
         filterChangedListener.onRemoveFilter(FilterEntryComponent.this);
@@ -63,11 +53,6 @@ public final class FilterEntryComponent extends Composite {
     addBtn.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false, 1, 1));
     addBtn.setText("+");
     addBtn.addSelectionListener(new SelectionAdapter() {
-      /**
-       * 
-       */
-      private static final long serialVersionUID = -1174966453087654323L;
-
       @Override
       public void widgetSelected(SelectionEvent e) {
         filterChangedListener.onAddFilter(FilterEntryComponent.this);

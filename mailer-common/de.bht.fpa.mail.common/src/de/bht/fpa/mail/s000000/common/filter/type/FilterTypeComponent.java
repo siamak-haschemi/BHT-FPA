@@ -30,11 +30,6 @@ import de.bht.fpa.mail.s000000.common.filter.operator.ImportanceFilterOperatorCo
 import de.bht.fpa.mail.s000000.common.rcp.selection.SelectionHelper;
 
 public final class FilterTypeComponent extends Composite {
-
-  /**
-   * 
-   */
-  private static final long serialVersionUID = 5104129338958465143L;
   private final Composite filterPanel;
   private final StackLayout stackLayout;
   private ComboViewer filterTypeComboViewer;
@@ -58,11 +53,6 @@ public final class FilterTypeComponent extends Composite {
 
     filterTypeComboViewer.setContentProvider(ArrayContentProvider.getInstance());
     filterTypeComboViewer.setLabelProvider(new LabelProvider() {
-      /**
-       * 
-       */
-      private static final long serialVersionUID = -5602520925422734541L;
-
       @Override
       public String getText(Object element) {
         if (!(element instanceof FilterType)) {
