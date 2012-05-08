@@ -2,7 +2,7 @@
 <feature
       id="de.bht.fpa.mail.common.feature"
       label="FPA Mailer Common"
-      version="1.0.0.qualifier">
+      version="1.0.2.qualifier">
 
    <description url="http://qyotta.de/redmine/projects/bht-fpa-public">
       Projekt für die BHT FPA Veranstaltung

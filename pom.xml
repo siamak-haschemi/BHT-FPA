@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>de.bht.fpa</groupId>
   <artifactId>root</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
+  <version>1.0.2-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <licenses>
@@ -105,11 +105,14 @@
         <version>${tycho-version}</version>
         <configuration>
           <resolver>p2</resolver>
+          <dependency-resolution>
+            <optionalDependencies>ignore</optionalDependencies>
+          </dependency-resolution>
           <target>
             <artifact>
               <groupId>de.bht.fpa</groupId>
               <artifactId>eclipse-configuration</artifactId>
-              <version>1.0.0-SNAPSHOT</version>
+              <version>1.0.2-SNAPSHOT</version>
               <classifier>fpa_eclipse_target</classifier>
             </artifact>
           </target>
