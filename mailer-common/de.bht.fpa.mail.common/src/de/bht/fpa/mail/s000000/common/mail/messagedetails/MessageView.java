@@ -107,7 +107,7 @@ public class MessageView extends ViewPart {
     lblFrom.setAlignment(SWT.RIGHT);
     lblFrom.setEnabled(false);
     toolkit.adapt(lblFrom, true, true);
-    lblFrom.setText("Von");
+    lblFrom.setText("Sender");
 
     txtFrom = new Text(mailHeader, SWT.READ_ONLY | SWT.WRAP | SWT.MULTI);
     txtFrom.setLayoutData(new GridData(SWT.FILL, SWT.TOP, true, false, 1, 1));
@@ -117,7 +117,7 @@ public class MessageView extends ViewPart {
     lblAbout.setLayoutData(new GridData(SWT.RIGHT, SWT.TOP, false, false, 1, 1));
     lblAbout.setAlignment(SWT.RIGHT);
     toolkit.adapt(lblAbout, true, true);
-    lblAbout.setText("Betreff");
+    lblAbout.setText("Subject");
 
     txtSubject = new Text(mailHeader, SWT.READ_ONLY | SWT.WRAP | SWT.MULTI);
     txtSubject.setLayoutData(new GridData(SWT.FILL, SWT.TOP, true, false, 1, 1));
@@ -127,7 +127,7 @@ public class MessageView extends ViewPart {
     lblDate.setLayoutData(new GridData(SWT.RIGHT, SWT.TOP, false, false, 1, 1));
     lblDate.setAlignment(SWT.RIGHT);
     toolkit.adapt(lblDate, true, true);
-    lblDate.setText("Empfangen");
+    lblDate.setText("Received");
 
     txtReceived = new Text(mailHeader, SWT.READ_ONLY | SWT.WRAP | SWT.MULTI);
     txtReceived.setLayoutData(new GridData(SWT.FILL, SWT.TOP, true, false, 1, 1));
@@ -137,7 +137,7 @@ public class MessageView extends ViewPart {
     lblTo.setLayoutData(new GridData(SWT.RIGHT, SWT.TOP, false, false, 1, 1));
     lblTo.setAlignment(SWT.RIGHT);
     toolkit.adapt(lblTo, true, true);
-    lblTo.setText("Empfänger");
+    lblTo.setText("Receivers");
 
     txtTo = new Text(mailHeader, SWT.READ_ONLY | SWT.WRAP | SWT.MULTI);
     txtTo.setLayoutData(new GridData(SWT.FILL, SWT.TOP, true, false, 1, 1));
