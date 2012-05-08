@@ -61,6 +61,7 @@ import de.bht.fpa.mail.s000000.common.rcp.selection.SelectionHelper;
  * 
  */
 public final class FilterDialog extends Dialog {
+  private static final String DIALOG_TITLE = "Filter Configuration";
   private static final int HEIGHT = 300;
   private static final int WIDTH = 600;
   private static final int NR_OF_COLUMNS = 3;
@@ -106,6 +107,7 @@ public final class FilterDialog extends Dialog {
   protected Control createDialogArea(Composite parent) {
     container = (Composite) super.createDialogArea(parent);
     container.setLayout(new GridLayout(1, false));
+    getShell().setText(DIALOG_TITLE);
 
     addUnionIntersection();
     addFilterEntryGroup();
