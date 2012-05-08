@@ -11,6 +11,7 @@ package de.bht.fpa.mail.s000000.common.filter.operator;
 import org.eclipse.jface.viewers.ArrayContentProvider;
 import org.eclipse.jface.viewers.ComboViewer;
 import org.eclipse.jface.viewers.LabelProvider;
+import org.eclipse.jface.viewers.StructuredSelection;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.layout.GridData;
 import org.eclipse.swt.layout.GridLayout;
@@ -57,6 +58,9 @@ public final class BooleanFilterOperatorComposite extends FilterOperatorComposit
       }
     });
     comboViewer.setInput(new Boolean[] { Boolean.TRUE, Boolean.FALSE });
+
+    // default
+    comboViewer.setSelection(new StructuredSelection(Boolean.TRUE));
 
     operator = FilterOperator.IS;
   }
