@@ -34,12 +34,15 @@ public class StringValueFormatter implements IValueFormatter<Object, String> {
     this.format = format;
   }
 
+  @Override
   public String format(Object obj) {
-    if (format == null)
+    if (format == null) {
       return String.valueOf(obj);
+    }
     return format.format(obj);
   }
 
+  @Override
   public Object parse(String str) {
     if (format == null) {
       return str;

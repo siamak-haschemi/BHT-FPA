@@ -22,7 +22,6 @@ import de.bht.fpa.mail.s000000.common.mail.model.Importance;
 import de.bht.fpa.mail.s000000.common.rcp.selection.SelectionHelper;
 
 public final class ImportanceFilterOperatorComposite extends FilterOperatorComposite<Importance> {
-
   private final FilterOperator operator;
   private ComboViewer comboViewer;
 

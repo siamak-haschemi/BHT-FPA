@@ -62,6 +62,7 @@ public final class UseSWT {
     btnSubmit = new Button(shell, SWT.NONE);
     btnSubmit.setLayoutData(new GridData(SWT.CENTER, SWT.CENTER, true, false, 2, 1));
     btnSubmit.setText("Submit");
+    btnSubmit.setEnabled(false);
 
     btnSubmit.addSelectionListener(new SelectionAdapter() {
       @Override

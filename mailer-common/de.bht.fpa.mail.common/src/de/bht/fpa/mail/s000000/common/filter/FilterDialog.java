@@ -13,6 +13,8 @@ import java.util.List;
 
 import org.eclipse.jface.dialogs.Dialog;
 import org.eclipse.jface.dialogs.IDialogConstants;
+import org.eclipse.jface.dialogs.IDialogLabelKeys;
+import org.eclipse.jface.resource.JFaceResources;
 import org.eclipse.jface.viewers.ArrayContentProvider;
 import org.eclipse.jface.viewers.ComboViewer;
 import org.eclipse.jface.viewers.ISelectionChangedListener;
@@ -59,7 +61,7 @@ import de.bht.fpa.mail.s000000.common.rcp.selection.SelectionHelper;
  * 
  */
 public final class FilterDialog extends Dialog {
-
+  private static final String DIALOG_TITLE = "Filter Configuration";
   private static final int HEIGHT = 300;
   private static final int WIDTH = 600;
   private static final int NR_OF_COLUMNS = 3;
@@ -105,6 +107,7 @@ public final class FilterDialog extends Dialog {
   protected Control createDialogArea(Composite parent) {
     container = (Composite) super.createDialogArea(parent);
     container.setLayout(new GridLayout(1, false));
+    getShell().setText(DIALOG_TITLE);
 
     addUnionIntersection();
     addFilterEntryGroup();
@@ -180,8 +183,11 @@ public final class FilterDialog extends Dialog {
    */
   @Override
   protected void createButtonsForButtonBar(Composite parent) {
-    createButton(parent, IDialogConstants.OK_ID, IDialogConstants.OK_LABEL, true);
-    createButton(parent, IDialogConstants.CANCEL_ID, IDialogConstants.CANCEL_LABEL, false);
+    String ok = JFaceResources.getString(IDialogLabelKeys.OK_LABEL_KEY);
+    String cancel = JFaceResources.getString(IDialogLabelKeys.CANCEL_LABEL_KEY);
+
+    createButton(parent, IDialogConstants.OK_ID, ok, true);
+    createButton(parent, IDialogConstants.CANCEL_ID, cancel, false);
   }
 
   /**

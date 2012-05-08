@@ -24,7 +24,6 @@ import de.ralfebert.rcputils.tables.ICellFormatter;
  */
 @SuppressWarnings("unchecked")
 public class PropertyCellLabelProvider extends CellLabelProvider {
-
   private final IValue valueHandler;
   @SuppressWarnings("rawtypes")
   private IValueFormatter valueFormatter;

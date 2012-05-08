@@ -11,16 +11,15 @@ package de.bht.fpa.mail.s000000.common.filter.entry;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
+import org.eclipse.swt.layout.GridData;
 import org.eclipse.swt.layout.GridLayout;
 import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.widgets.Composite;
-import org.eclipse.swt.layout.GridData;
 
 import de.bht.fpa.mail.s000000.common.filter.FilterCombination;
 import de.bht.fpa.mail.s000000.common.filter.type.FilterTypeComponent;
 
 public final class FilterEntryComponent extends Composite {
-
   private static final int NR_OF_COLUMNS = 3;
   private IFilterEntryChangedListener filterChangedListener = IFilterEntryChangedListener.NULL;
   private final FilterTypeComponent filterTypeComponent;

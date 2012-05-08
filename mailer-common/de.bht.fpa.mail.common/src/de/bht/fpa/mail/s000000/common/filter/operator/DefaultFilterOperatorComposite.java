@@ -25,7 +25,6 @@ import de.bht.fpa.mail.s000000.common.filter.FilterOperator;
 import de.bht.fpa.mail.s000000.common.rcp.selection.SelectionHelper;
 
 public final class DefaultFilterOperatorComposite extends FilterOperatorComposite<String> {
-
   private FilterOperator operator;
   private Text text;
 

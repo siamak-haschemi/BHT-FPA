@@ -26,7 +26,6 @@ import org.eclipse.swt.widgets.TableColumn;
  * @author Ralf Ebert <info@ralfebert.de>
  */
 public final class ColumnSortSelectionListener extends SelectionAdapter {
-
   private final TableViewer viewer;
 
   public ColumnSortSelectionListener(TableViewer viewer) {
@@ -37,7 +36,7 @@ public final class ColumnSortSelectionListener extends SelectionAdapter {
   public void widgetSelected(SelectionEvent e) {
     TableColumn column = (TableColumn) e.getSource();
     Table table = column.getParent();
-    boolean alreadyActiveSortColumn = (column == table.getSortColumn());
+    boolean alreadyActiveSortColumn = column == table.getSortColumn();
     if (alreadyActiveSortColumn) {
       table.setSortDirection(table.getSortDirection() == SWT.DOWN ? SWT.UP : SWT.DOWN);
     } else {

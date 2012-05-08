@@ -31,7 +31,6 @@ import de.ralfebert.rcputils.tables.TableViewerBuilder;
  * @author Ralf Ebert <info@ralfebert.de>
  */
 public final class SortColumnComparator extends ViewerComparator {
-
   public static final String SORT_BY = SortColumnComparator.class.getName() + ".sortBy";
 
   @SuppressWarnings({ "unchecked", "rawtypes" })

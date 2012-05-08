@@ -20,6 +20,7 @@ import org.eclipse.swt.layout.GridData;
 import org.eclipse.swt.layout.GridLayout;
 import org.eclipse.swt.widgets.Combo;
 import org.eclipse.swt.widgets.Composite;
+
 import de.bht.fpa.mail.s000000.common.filter.FilterOperator;
 import de.bht.fpa.mail.s000000.common.filter.FilterType;
 import de.bht.fpa.mail.s000000.common.filter.operator.BooleanFilterOperatorComposite;
@@ -29,7 +30,6 @@ import de.bht.fpa.mail.s000000.common.filter.operator.ImportanceFilterOperatorCo
 import de.bht.fpa.mail.s000000.common.rcp.selection.SelectionHelper;
 
 public final class FilterTypeComponent extends Composite {
-
   private final Composite filterPanel;
   private final StackLayout stackLayout;
   private ComboViewer filterTypeComboViewer;

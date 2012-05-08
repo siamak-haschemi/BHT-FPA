@@ -14,7 +14,7 @@ public class EverythingOnOurOwn {
 
     String email = "";
     do {
-      System.out.print("What is your E-Mail address?");
+      System.out.print("What is your E-Mail address? ");
       email = reader.readLine();
     } while (!emailIsValid(email));
 
