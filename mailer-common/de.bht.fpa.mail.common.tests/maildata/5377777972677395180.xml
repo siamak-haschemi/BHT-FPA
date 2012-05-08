@@ -4,16 +4,16 @@
     <importance>low</importance>
     <read>false</read>
     <received>3184-12-31 00:44:46</received>
-    <recipient>
+    <recipients>
         <email>schwarzenegger_trude@beuth-hochschule.de</email>
         <id>5800670751543112380</id>
         <personal>heidi stulle</personal>
-    </recipient>
-    <recipient>
+    </recipients>
+    <recipients>
         <email>stulle_lola@beuth-hochschule.de</email>
         <id>3340832330666508128</id>
         <personal>trude stulle</personal>
-    </recipient>
+    </recipients>
     <sender>
         <email>schmidt_karl@myspace.com</email>
         <id>7151939302014745277</id>

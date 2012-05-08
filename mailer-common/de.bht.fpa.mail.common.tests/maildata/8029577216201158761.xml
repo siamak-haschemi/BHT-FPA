@@ -4,11 +4,11 @@
     <importance>normal</importance>
     <read>false</read>
     <received>4782-07-05 06:37:10</received>
-    <recipient>
+    <recipients>
         <email>schwarzenegger_arnold@beuth-hochschule.de</email>
         <id>1465501641093589262</id>
         <personal>lola schmidt</personal>
-    </recipient>
+    </recipients>
     <sender>
         <email>schmidt_lola@myspace.com</email>
         <id>3288617840536165882</id>
