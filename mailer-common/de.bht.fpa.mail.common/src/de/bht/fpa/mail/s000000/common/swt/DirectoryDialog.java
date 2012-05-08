@@ -9,9 +9,9 @@ public class DirectoryDialog {
   public static final String SYSTEM_PROPERTY_VALUE = "test";
 
   private final Shell parent;
-  private String text;
-  private String message;
-  private String filterPath;
+  private String text = null;
+  private String message = null;
+  private String filterPath = null;
 
   public DirectoryDialog(Shell parent) {
     this.parent = parent;
@@ -36,9 +36,17 @@ public class DirectoryDialog {
 
   private String openOriginalDirectoryDialog() {
     org.eclipse.swt.widgets.DirectoryDialog directoryDialog = new org.eclipse.swt.widgets.DirectoryDialog(parent);
-    directoryDialog.setMessage(message);
-    directoryDialog.setText(text);
-    directoryDialog.setFilterPath(filterPath);
+    if (message != null) {
+      directoryDialog.setMessage(message);
+    }
+
+    if (text != null) {
+      directoryDialog.setText(text);
+    }
+
+    if (filterPath != null) {
+      directoryDialog.setFilterPath(filterPath);
+    }
     return directoryDialog.open();
   }
 
