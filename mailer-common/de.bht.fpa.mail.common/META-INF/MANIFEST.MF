@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Common
 Bundle-SymbolicName: de.bht.fpa.mail.common;singleton:=true
-Bundle-Version: 1.0.1.qualifier
+Bundle-Version: 1.0.2.qualifier
 Bundle-ClassPath: .,
  libs/derby.jar,
  libs/eclipselink.jar,
@@ -38,6 +38,8 @@ Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.core.databinding.property,
  org.eclipse.ui,
  org.eclipse.ui.forms,
- org.eclipse.jface.databinding
+ org.eclipse.jface.databinding,
+ org.eclipse.rap.ui;resolution:=optional,
+ org.eclipse.rap.ui.forms;resolution:=optional
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Bundle-ActivationPolicy: lazy
