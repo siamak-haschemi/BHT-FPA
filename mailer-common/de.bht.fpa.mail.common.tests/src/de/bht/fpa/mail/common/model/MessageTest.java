@@ -52,7 +52,7 @@ public class MessageTest {
 
     for (File messageFile : messageFiles) {
       Message message = JAXB.unmarshal(messageFile, Message.class);
-      checkMessage(message);
+      checkMessage("Parsed file '" + messageFile.getAbsolutePath() + "'", message);
     }
   }
 
@@ -98,24 +98,24 @@ public class MessageTest {
     assertThat(readMessage.getId(), is(4711L));
   }
 
-  private void checkMessage(Message message) {
-    assertThat(message.getId(), is(notNullValue()));
-    assertTrue(message.getId() > -1);
-    assertThat(message.getText(), is(notNullValue()));
-    assertThat(message.getSubject(), is(notNullValue()));
+  private void checkMessage(String msg, Message message) {
+    assertThat(msg, message.getId(), is(notNullValue()));
+    assertTrue(msg, message.getId() > -1);
+    assertThat(msg, message.getText(), is(notNullValue()));
+    assertThat(msg, message.getSubject(), is(notNullValue()));
 
-    assertThat(message.getSender(), is(notNullValue()));
-    assertThat(message.getSender().getId(), is(notNullValue()));
+    assertThat(msg, message.getSender(), is(notNullValue()));
+    assertThat(msg, message.getSender().getId(), is(notNullValue()));
 
-    assertThat(message.getImportance(), is(notNullValue()));
-    assertThat(message.getReceived(), is(notNullValue()));
-    assertThat(message.getSent(), is(notNullValue()));
+    assertThat(msg, message.getImportance(), is(notNullValue()));
+    assertThat(msg, message.getReceived(), is(notNullValue()));
+    assertThat(msg, message.getSent(), is(notNullValue()));
 
-    assertThat(message.getRecipients().size(), is(greaterThan(0)));
-    assertThat(message.getRecipients().get(0).getId(), is(notNullValue()));
+    assertThat(msg, message.getRecipients().size(), is(greaterThan(0)));
+    assertThat(msg, message.getRecipients().get(0).getId(), is(notNullValue()));
 
-    assertThat(message.getAttachment().size(), is(0));
-    assertThat(message.isRead(), is(notNullValue()));
+    assertThat(msg, message.getAttachment().size(), is(0));
+    assertThat(msg, message.isRead(), is(notNullValue()));
   }
 
   @SuppressWarnings("unchecked")
