@@ -34,7 +34,7 @@
                 <configuration>
                   <fromDir>${project.build.directory}/repository</fromDir>
                   <url>scpexe://root@qyotta.de</url>
-                  <toDir>/opt/files/p2-repositories/de.bht.fpa/${unqualifiedVersion}.${buildQualifier}/</toDir>
+                  <toDir>/opt/files/p2-repositories/BHT-FPA/${unqualifiedVersion}.${buildQualifier}/</toDir>
                   <serverId>qyotta</serverId>
                 </configuration>
               </execution>
