@@ -153,7 +153,7 @@ public class RandomTestDataProvider implements ITestDataProvider {
   }
 
   private Importance randomImportance() {
-    int nextInt = random.nextInt(2);
+    int nextInt = random.nextInt(3);
     if (nextInt <= 0) {
       return Importance.LOW;
     }
