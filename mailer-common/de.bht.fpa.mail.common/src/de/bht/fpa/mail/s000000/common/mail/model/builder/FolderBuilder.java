@@ -13,6 +13,7 @@ import java.util.Collection;
 import java.util.LinkedList;
 import java.util.List;
 
+import de.bht.fpa.mail.s000000.common.mail.model.Account;
 import de.bht.fpa.mail.s000000.common.mail.model.Folder;
 import de.bht.fpa.mail.s000000.common.mail.model.Message;
 
@@ -41,6 +42,7 @@ import de.bht.fpa.mail.s000000.common.mail.model.Message;
 public final class FolderBuilder {
   private Long id;
   private String fullName;
+  private Account account;
   private final List<MessageBuilder> messageBuilders = new LinkedList<MessageBuilder>();
   private final List<FolderBuilder> folderBuilders = new LinkedList<FolderBuilder>();
 
@@ -55,6 +57,7 @@ public final class FolderBuilder {
   public Folder build() {
     Folder folder = new Folder();
     folder.setId(id);
+    folder.setAccount(account);
     folder.setFullName(fullName);
 
     List<Folder> folders = new ArrayList<Folder>(folderBuilders.size());
@@ -76,6 +79,7 @@ public final class FolderBuilder {
     // @formatter:off
     return newFolderBuilder()
         .id(id)
+        .account(account)
         .fullName(fullName)
         .messages(messageBuilders)
         .folders(folderBuilders);
@@ -84,6 +88,11 @@ public final class FolderBuilder {
 
   public FolderBuilder id(Long id) {
     this.id = id;
+    return this;
+  }
+
+  public FolderBuilder account(Account account) {
+    this.account = account;
     return this;
   }
 
