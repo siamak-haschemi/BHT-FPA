@@ -12,8 +12,8 @@
 <location includeAllPlatforms="false" includeMode="planner" includeSource="true" type="InstallableUnit">
 <unit id="org.apache.commons.codec" version="1.2.0.v20100518-1135"/>
 <unit id="org.apache.commons.codec.source" version="1.2.0.v20100518-1135"/>
-<unit id="javax.mail.glassfish" version="1.4.1.v201108011116"/>
-<unit id="javax.mail.glassfish.source" version="1.4.1.v201108011116"/>
+<unit id="javax.mail.glassfish" version="1.4.1.v201005082020"/>
+<unit id="javax.mail.glassfish.source" version="1.4.1.v201005082020"/>
 <unit id="com.google.collect" version="1.0.0.v201105210816"/>
 <unit id="com.google.collect.source" version="1.0.0.v201105210816"/>
 <unit id="org.slf4j.api" version="1.6.1.v20100831-0715"/>
@@ -31,7 +31,7 @@
 <unit id="org.hamcrest" version="1.1.0.v20090501071000"/>
 <unit id="org.hamcrest.text" version="1.1.0.v20090501071000"/>
 <unit id="org.hamcrest.text.source" version="1.1.0.v20090501071000"/>
-<repository location="http://download.eclipse.org/tools/orbit/downloads/drops/S20120519125550/repository/"/>
+<repository location="http://qyotta.de/files/p2-repositories/orbit/"/>
 </location>
 <location includeAllPlatforms="false" includeMode="planner" includeSource="true" type="InstallableUnit">
 <unit id="org.eclipse.swtbot.eclipse.feature.group" version="2.0.5.20111003_1754-3676ac8-dev-e36"/>
