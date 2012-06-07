@@ -123,4 +123,52 @@ public class Folder extends BaseEntity {
     return s.toString();
   }
 
+  @Override
+  public boolean equals(Object obj) {
+    if (this == obj) {
+      return true;
+    }
+    if (obj == null || obj.getClass() != this.getClass()) {
+      return false;
+    }
+    // object must be Test at this point
+    Folder test = (Folder) obj;
+    if (getId() != null && test.getId() != null) {
+      return getId().equals(test.getId());
+    }
+    if (getFullName() != null && test.getFullName() != null) {
+      return getFullName().equals(test.getFullName());
+    }
+    return super.equals(obj);
+  }
+
+  @Override
+  public int hashCode() {
+    if (getId() != null) {
+      return getId().hashCode();
+    }
+
+    if (getFullName() != null) {
+      return getFullName().hashCode();
+    }
+
+    return super.hashCode();
+  }
+
+  @Override
+  public int compareTo(BaseEntity other) {
+    if (getId() != null && other.getId() != null) {
+      return getId().compareTo(other.getId());
+    }
+
+    if (other instanceof Folder) {
+      Folder otherF = (Folder) other;
+      if (getFullName() != null && otherF.getFullName() != null) {
+        return getFullName().compareTo(otherF.getFullName());
+      }
+    }
+
+    return super.compareTo(other);
+  }
+
 }

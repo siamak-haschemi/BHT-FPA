@@ -52,7 +52,7 @@ public final class MessageConverter {
   private static final int X_PRIORITY_HIGH_START = 2;
   private static final Map<RecipientType, javax.mail.Message.RecipientType> recipientType = new HashMap<RecipientType, javax.mail.Message.RecipientType>();
 
-  private MessageConverter() {
+  public MessageConverter() {
     recipientType.put(RecipientType.TO, javax.mail.Message.RecipientType.TO);
     recipientType.put(RecipientType.CC, javax.mail.Message.RecipientType.CC);
     recipientType.put(RecipientType.BCC, javax.mail.Message.RecipientType.BCC);
@@ -70,7 +70,7 @@ public final class MessageConverter {
    *         failed.
    * @throws MessageConversionException
    */
-  public static Message convertJavaxMessage(UIDFolder uidFolder, javax.mail.Message javaMailMessage)
+  public Message convertJavaxMessage(UIDFolder uidFolder, javax.mail.Message javaMailMessage)
       throws MessageConversionException {
     try {
       // @formatter:off
