@@ -45,6 +45,7 @@ public final class FolderBuilder {
   private Account account;
   private final List<MessageBuilder> messageBuilders = new LinkedList<MessageBuilder>();
   private final List<FolderBuilder> folderBuilders = new LinkedList<FolderBuilder>();
+  private final List<Message> messages = new LinkedList<Message>();
 
   private FolderBuilder() {
 
@@ -70,6 +71,7 @@ public final class FolderBuilder {
     for (MessageBuilder messageBuilder : messageBuilders) {
       messages.add(messageBuilder.build());
     }
+    messages.addAll(this.messages);
     folder.setMessages(messages);
 
     return folder;
@@ -108,6 +110,11 @@ public final class FolderBuilder {
 
   public FolderBuilder messages(Collection<MessageBuilder> messageBuilders) {
     this.messageBuilders.addAll(messageBuilders);
+    return this;
+  }
+
+  public FolderBuilder builtMessages(Collection<Message> messages) {
+    this.messages.addAll(messages);
     return this;
   }
 
