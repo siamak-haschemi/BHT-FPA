@@ -45,12 +45,18 @@ public abstract class BaseEntity implements Serializable, Comparable<BaseEntity>
     }
     // object must be Test at this point
     BaseEntity test = (BaseEntity) obj;
-    return getId().equals(test.getId());
+    if (getId() != null && test.getId() != null) {
+      return getId().equals(test.getId());
+    }
+    return false;
   }
 
   @Override
   public int compareTo(BaseEntity other) {
-    return getId().compareTo(other.getId());
+    if (getId() != null && other.getId() != null) {
+      return getId().compareTo(other.getId());
+    }
+    return -1;
   }
 
 }

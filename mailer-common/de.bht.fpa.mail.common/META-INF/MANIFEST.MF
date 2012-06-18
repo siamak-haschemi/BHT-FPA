@@ -9,6 +9,9 @@ Bundle-ClassPath: .,
  libs/javax.persistence_2.0.3.v201010191057.jar
 Bundle-Activator: de.bht.fpa.mail.s000000.common.internal.Activator
 Export-Package: de.bht.fpa.mail.s000000.common.filter,
+ de.bht.fpa.mail.s000000.common.filter.entry,
+ de.bht.fpa.mail.s000000.common.filter.operator,
+ de.bht.fpa.mail.s000000.common.filter.type,
  de.bht.fpa.mail.s000000.common.mail.imapsync,
  de.bht.fpa.mail.s000000.common.mail.messagedetails,
  de.bht.fpa.mail.s000000.common.mail.model,
