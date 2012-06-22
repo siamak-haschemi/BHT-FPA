@@ -10,6 +10,7 @@ package de.bht.fpa.mail.s000000.common.swt;
 
 import org.eclipse.jface.dialogs.InputDialog;
 import org.eclipse.jface.window.Window;
+import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.Shell;
 
 public class DirectoryDialog {
@@ -20,9 +21,15 @@ public class DirectoryDialog {
   private String text = null;
   private String message = null;
   private String filterPath = null;
+  private int open = SWT.NONE;
 
   public DirectoryDialog(Shell parent) {
     this.parent = parent;
+  }
+
+  public DirectoryDialog(Shell parent, int open) {
+    this.parent = parent;
+    this.open = open;
   }
 
   public String open() {
@@ -43,7 +50,7 @@ public class DirectoryDialog {
   }
 
   private String openOriginalDirectoryDialog() {
-    org.eclipse.swt.widgets.DirectoryDialog directoryDialog = new org.eclipse.swt.widgets.DirectoryDialog(parent);
+    org.eclipse.swt.widgets.DirectoryDialog directoryDialog = new org.eclipse.swt.widgets.DirectoryDialog(parent, open);
     if (message != null) {
       directoryDialog.setMessage(message);
     }

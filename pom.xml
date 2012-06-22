@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>de.bht.fpa</groupId>
   <artifactId>root</artifactId>
-  <version>1.0.2-SNAPSHOT</version>
+  <version>1.0.3-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <licenses>
@@ -112,7 +112,7 @@
             <artifact>
               <groupId>de.bht.fpa</groupId>
               <artifactId>eclipse-configuration</artifactId>
-              <version>1.0.2-SNAPSHOT</version>
+              <version>${project.version}</version>
               <classifier>fpa_eclipse_target</classifier>
             </artifact>
           </target>

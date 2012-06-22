@@ -4,12 +4,12 @@
   <parent>
     <groupId>de.bht.fpa</groupId>
     <artifactId>root</artifactId>
-    <version>1.0.2-SNAPSHOT</version>
+    <version>1.0.3-SNAPSHOT</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
   <groupId>de.bht.fpa</groupId>
   <artifactId>p2-repository</artifactId>
-  <version>1.0.2-SNAPSHOT</version>
+  <version>1.0.3-SNAPSHOT</version>
   <packaging>eclipse-repository</packaging>
 
   <profiles>
