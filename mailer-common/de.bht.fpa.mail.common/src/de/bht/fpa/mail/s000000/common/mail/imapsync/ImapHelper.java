@@ -54,7 +54,10 @@ public class ImapHelper {
   }
 
   /**
+   * Set the Debug-Mode
+   * 
    * @param debug
+   *          true if you want to debug.
    */
   public static void setDebug( boolean debug ) {
     ImapHelper.debug = debug;
