@@ -8,11 +8,14 @@
 
 package de.bht.fpa.mail.s000000.common.mail.imapsync;
 
+import static de.bht.fpa.mail.s000000.common.mail.model.builder.Builders.newFolderBuilder;
+
 import java.util.Dictionary;
 import java.util.Enumeration;
 import java.util.Hashtable;
 import java.util.List;
 import java.util.Properties;
+
 import javax.mail.MessagingException;
 import javax.mail.Session;
 import javax.mail.Store;
@@ -21,13 +24,16 @@ import javax.persistence.EntityManager;
 import javax.persistence.Query;
 
 import org.eclipse.core.runtime.IProgressMonitor;
+import org.eclipse.core.runtime.Status;
+import org.eclipse.swt.widgets.Display;
 import com.sun.mail.imap.IMAPFolder;
 
+import de.bht.fpa.mail.s000000.common.internal.Activator;
 import de.bht.fpa.mail.s000000.common.mail.model.Account;
 import de.bht.fpa.mail.s000000.common.mail.model.Folder;
 import de.bht.fpa.mail.s000000.common.mail.model.Message;
 import de.bht.fpa.mail.s000000.common.persistence.PersistenceManager;
-import static de.bht.fpa.mail.s000000.common.mail.model.builder.Builders.*;
+import de.bht.fpa.mail.s000000.common.rcp.exception.ExceptionDetailsErrorDialog;
 
 /**
  * This class allows to synchronize a remote IMAP-based Mail-account with a
@@ -109,7 +115,7 @@ public class ImapHelper {
    *          a key-value Map to override properties (i.e. for another port).
    * @throws SynchronizationException
    */
-  public static void syncAllFoldersToAccount(Account account, IProgressMonitor monitor,
+  public static void syncAllFoldersToAccount(final Account account, IProgressMonitor monitor,
       Dictionary<String, String> properties, String protocol) throws SynchronizationException {
     try {
       Properties props = combineProperties(properties);
@@ -142,8 +148,16 @@ public class ImapHelper {
         monitor.done();
         store.close();
       }
-    } catch (Exception e) {
-      throw new SynchronizationException("Synchronization of Account '" + account.getName() + "' failed:", e);
+    } catch (final Exception e) {
+      Display.getDefault().syncExec(new Runnable() {
+        @Override
+        public void run() {
+          Status status = new Status(Status.ERROR, Activator.PLUGIN_ID, "Synchronization of Account '"
+              + account.getName() + "' failed", e.getCause());
+          ExceptionDetailsErrorDialog.openError(Display.getDefault().getActiveShell(), status.getMessage(), null,
+              status);
+        }
+      });
     }
   }
 
