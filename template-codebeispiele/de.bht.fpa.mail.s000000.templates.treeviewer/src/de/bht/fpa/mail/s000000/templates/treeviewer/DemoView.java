@@ -12,9 +12,13 @@ public final class DemoView extends ViewPart {
   @Override
   public void createPartControl(Composite parent) {
     viewer = new TreeViewer(parent);
-    viewer.setLabelProvider(new LabelProvider());
-    viewer.setContentProvider(new DemoContentProvider());
-    viewer.setInput(createModel());
+    LabelProvider l = new LabelProvider();
+    DemoContentProvider d = new DemoContentProvider();
+    String s = createModel();
+
+    viewer.setLabelProvider(l);
+    viewer.setContentProvider(d);
+    viewer.setInput(s);
   }
 
   private String createModel() {
