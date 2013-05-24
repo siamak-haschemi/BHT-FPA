@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?pde version="3.6"?>
 
-<target name="fpa" sequenceNumber="16">
+<target name="fpa" sequenceNumber="17">
 <locations>
 <location includeAllPlatforms="false" includeMode="planner" includeSource="true" type="InstallableUnit">
 <unit id="org.eclipse.rcp.sdk.id" version="3.7.2.M20120208-0800"/>
@@ -32,8 +32,17 @@
 <unit id="org.hamcrest.text" version="1.1.0.v20090501071000"/>
 <unit id="org.hamcrest.text.source" version="1.1.0.v20090501071000"/>
 <unit id="javax.activation" version="1.1.0.v201105071233"/>
-<!--<unit id="org.jmock" version="1.2.0.v201112120441"/>-->
-<repository location="http://download.eclipse.org/tools/orbit/downloads/drops/R20120119162704/repository/"/>
+<repository location="http://qyotta.de/files/p2-repositories/orbit/"/>
+</location>
+<location includeAllPlatforms="false" includeMode="planner" includeSource="true" type="InstallableUnit">
+<unit id="org.eclipse.swtbot.eclipse.feature.group" version="2.0.5.20111003_1754-3676ac8-dev-e36"/>
+<unit id="org.eclipse.swtbot.eclipse.gef.feature.group" version="2.0.5.20111003_1754-3676ac8-dev-e36"/>
+<unit id="org.eclipse.swtbot.ide.feature.group" version="2.0.5.20111003_1754-3676ac8-dev-e36"/>
+<unit id="org.eclipse.swtbot.eclipse.test.junit3.feature.group" version="2.0.5.20111003_1754-3676ac8-dev-e36"/>
+<unit id="org.eclipse.swtbot.eclipse.test.junit4.feature.group" version="2.0.5.20111003_1754-3676ac8-dev-e36"/>
+<unit id="org.eclipse.swtbot.feature.group" version="2.0.5.20111003_1754-3676ac8-dev-e36"/>
+<unit id="org.eclipse.swtbot.forms.feature.group" version="2.0.5.20111003_1754-3676ac8-dev-e36"/>
+<repository location="http://download.eclipse.org/technology/swtbot/helios/dev-build/update-site"/>
 </location>
 </locations>
 </target>
